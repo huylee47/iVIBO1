@@ -18,7 +18,7 @@ import LoginUpdate from "./components/LoginUpdate.vue";
 import LoginQrCode from "./components/LoginQrCode.vue";
 import { useUserStoreHook } from "@/store/modules/user";
 import { initRouter, getTopMenu } from "@/router/utils";
-import { bg, avatar, illustration } from "./utils/static";
+import { bg, avatar, avatarW, illustration } from "./utils/static";
 import { ReImageVerify } from "@/components/ReImageVerify";
 import { ref, toRaw, reactive, watch, computed } from "vue";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
@@ -145,7 +145,7 @@ watch(loginDay, value => {
                 class="check-zh"
                 :icon="Check"
               />
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
@@ -167,7 +167,9 @@ watch(loginDay, value => {
       </div>
       <div class="login-box">
         <div class="login-form">
-          <avatar class="avatar" />
+          <!-- <avatar class="avatar" /> -->
+          <avatar v-if="!dataTheme" class="avatar" />
+          <avatarW v-else class="avatar" />
           <Motion>
             <h2 class="outline-none">
               <TypeIt
