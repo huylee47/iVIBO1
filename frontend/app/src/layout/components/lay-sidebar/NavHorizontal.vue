@@ -96,7 +96,7 @@ onMounted(() => {
               <span v-show="locale === 'zh'" class="check-zh">
                 <IconifyIconOffline :icon="Check" />
               </span>
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"

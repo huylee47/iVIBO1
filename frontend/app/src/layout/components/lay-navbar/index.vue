@@ -68,7 +68,7 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
                 class="check-zh"
                 :icon="Check"
               />
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
