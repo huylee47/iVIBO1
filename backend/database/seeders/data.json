@@ -1,0 +1,274 @@
+    {
+        "company":[
+            {
+                "company_name" : "Ouransoft 2F"
+            },
+            {
+                "company_name" : "ORS Group"
+            },
+            {
+                "company_name" : "Ouransoft Group"
+            },
+            {
+                "company_name" : "TD Intec"
+            }
+        ],
+        "department": [
+            {
+                "department_name" : "Board of Director",
+                "company_id" : 3,
+                "parent_id" : null
+            },
+            {
+                "department_name" : "Ouransoft 2F",
+                "company_id" : 3,
+                "parent_id" : null
+            },
+            {
+                "department_name" : "Head quarters",
+                "company_id" : 3,
+                "parent_id" : 1
+            },
+            {
+                "department_name" : "TD Intec",
+                "company_id" : 3,
+                "parent_id" : 1
+            },
+            {
+                "department_name" : "X Trans",
+                "company_id" : 3,
+                "parent_id" : 1
+            },
+            {
+                "department_name" : "SSB Edu",
+                "company_id" : 3,
+                "parent_id" : 1
+            },
+            {
+                "department_name" : "VCN Biz",
+                "company_id" : 3,
+                "parent_id" : 1
+            },
+            {
+                "department_name" : "Back Office",
+                "company_id" : 3,
+                "parent_id" : 3
+            },
+            {
+                "department_name" : "Technical",
+                "company_id" : 3,
+                "parent_id" : 3
+            },
+            {
+                "department_name" : "Consultant",
+                "company_id" : 3,
+                "parent_id" : 3
+            }
+        ],
+        "role": [
+            {
+                "role_name": "admin"
+            },
+            {
+                "role_name": "Internship"
+            },
+            {
+                "role_name": "Staff"
+            },
+            {
+                "role_name": "Leader"
+            },
+            {
+                "role_name": "Chief accountant"
+            },
+            {
+                "role_name": "Director"
+            },
+            {
+                "role_name": "General Director"
+            },
+            {
+                "role_name": "Chief accountant"
+            }
+        ],
+        "status": [
+            {
+                "status_name" :"Hoàn thành"
+            },
+            {
+                "status_name" :"Chưa hoàn thành"
+            },
+            {
+                "status_name" :"Đang thực hiện"
+            },
+            {
+                "status_name" :"Chậm tiến độ"
+            },
+            {
+                "status_name" :"Tạm dừng"
+            },
+            {
+                "status_name" :"Đã hủy"
+            },
+            {
+                "status_name" :"Đang làm việc"
+            },
+            {
+                "status_name" :"Đã nghỉ việc"
+            },
+            {
+                "status_name" :"Đã nghỉ hưu"
+            },
+            {
+                "status_name" :"Tạm nghỉ"
+            },
+            {
+                "status_name" :"Đi công tác"
+            },
+            {
+                "status_name" :"Nghỉ thai sản"
+            },
+            {
+                "status_name" :"Nghỉ hiếu/hỉ"
+            },
+            {
+                "status_name" :"Nghỉ nửa ngày"
+            },
+            {
+                "status_name" :"Nghỉ cả ngày"
+            },
+            {
+                "status_name" :"Chờ xác nhận"
+            },
+            {
+                "status_name" :"Đã phê duyệt"
+            },
+            {
+                "status_name" :"Đã huỷ"
+            }
+        ],
+        "project":[
+            {
+                "project_name" : "KIMSEN",
+                "status_id" :3
+            },
+            {
+                "project_name" : "SAMSUNG",
+                "status_id" :3
+            }
+        ],
+        "user":[
+            {
+                "name": "admin",
+                "email": "admin@gmail.com",
+                "username": "ORS001",
+                "password": "123456",
+                "role_id": 1,
+                "address": "Lê Hồng Phong , Hải An , Hải Phòng",
+                "avatar": "default.webp",
+                "phone_number": "0123456789",
+                "limit_remaining":10,
+                "department_id": 1,
+                "status_id": 7
+            },
+            {
+                "name": "staff1",
+                "email": "staff1@gmail.com",
+                "username": "ORS011",
+                "password": "123456",
+                "role_id": 3,
+                "address": "Lê Hồng Phong , Hải An , Hải Phòng",
+                "avatar": "default.webp",
+                "phone_number": "0123456788",
+                "limit_remaining":10,
+                "department_id": 4,
+                "status_id": 7 
+            },
+            {
+                "name": "staff2",
+                "email": "staff2@gmail.com",
+                "username": "ORS012",
+                "password": "123456",
+                "role_id": 3,
+                "address": "Lê Hồng Phong , Hải An , Hải Phòng",
+                "avatar": "default.webp",
+                "phone_number": "0123456787",
+                "limit_remaining":10,
+                "department_id": 4,
+                "status_id": 7
+            }
+        ],
+        "task":[
+            {
+                "task_name" : "create database",
+                "project_id" : 1,
+                "status_id" : 3,
+                "description" : "Khởi tạo database cho dự án",
+                "start_time": "2024-11-01 09:00:00",
+                "end_time": "2024-11-07 17:00:00"
+            },
+            {
+                "task_name" : "create UI",
+                "project_id" : 1,
+                "status_id" : 3,
+                "description" : "Thiết kế giao diện",
+                "start_time": "2024-11-01 09:00:00",
+                "end_time": "2024-11-07 17:00:00"
+            }
+        ],
+        "task_user":[
+            {
+                "task_id" : 1,
+                "user_id" : 2
+            },
+            {
+                "task_id" : 2,
+                "user_id" : 3
+            },
+            {
+                "task_id" : 2,
+                "user_id" : 2
+            },
+            {
+                "task_id" : 1,
+                "user_id" : 3
+            }
+        ],
+        "assignment_request" : [
+            {
+                "user_request_id" : 2,
+                "user_access_id": 1,
+                "location_assignment": "Da Nang" ,
+                "reason" : "Công tác với đối tác" ,
+                "status_id" : 16,
+                "start_time": "2024-11-07 09:00:00",
+                "end_time": "2024-11-15 17:00:00"
+            }
+        ],
+        "leave_request":[
+            {
+                "user_request_id" : 2, 
+                "user_access_id" : 1, 
+                "type" : 1,
+                "leave_time" :1, 
+                "reason" :"Khám sức khoẻ", 
+                "status_id"  : 16,
+                "start_time": "2024-11-07 09:00:00",
+                "end_time": "2024-11-07 17:00:00"               
+            }
+        ],
+        "check_log":[
+            {
+                "user_id" : 2
+            },
+            {
+                "user_id" : 3
+            },
+            {
+                "user_id" : 2
+            },
+            {
+                "user_id" : 3
+            }
+        ]
+    }
