@@ -88,7 +88,7 @@ export function useNav() {
   const title = computed(() => {
     return $config.Title;
   });
-
+  const epThemeStore = useEpThemeStoreHook();
   /** 动态title */
   function changeTitle(meta: routeMetaType) {
     const Title = getConfig().Title;
@@ -144,7 +144,10 @@ export function useNav() {
 
   /** 获取`logo` */
   function getLogo() {
-    return new URL("/logo.svg", import.meta.url).href;
+    const isDark = epThemeStore.epTheme === "light";
+    return isDark
+      ? new URL("/logo.svg", import.meta.url).href
+      : new URL("/white.svg", import.meta.url).href;
   }
 
   return {
