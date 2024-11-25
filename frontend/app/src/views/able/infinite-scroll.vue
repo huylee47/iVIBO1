@@ -59,7 +59,7 @@ const load = () => {
       :data="data"
       :infinite-scroll-disabled="isBottom"
     >
-      <el-table-column width="80" type="index" label="序号" />
+      <el-table-column width="80" type="index" label="ID" />
       <el-table-column prop="date" label="日期" />
       <el-table-column prop="name" label="名称" />
       <el-table-column prop="age" label="年龄" />

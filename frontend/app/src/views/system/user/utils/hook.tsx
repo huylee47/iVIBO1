@@ -99,7 +99,7 @@ export function useUser(tableRef: Ref, treeRef: Ref) {
       minWidth: 130
     },
     {
-      label: "用户昵称",
+      label: "用户Tên",
       prop: "nickname",
       minWidth: 130
     },

@@ -45,7 +45,7 @@ export function useNav() {
       : useUserStoreHook()?.avatar;
   });
 
-  /** 昵称（如果昵称为空则显示用户名） */
+  /** Tên（如果Tên为空则显示用户名） */
   const username = computed(() => {
     return isAllEmpty(useUserStoreHook()?.nickname)
       ? useUserStoreHook()?.username

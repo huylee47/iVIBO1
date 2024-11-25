@@ -1,6 +1,6 @@
 buttons:
-  pureAccountSettings: Cài đặt tài khoản
-  pureLoginOut: Thoát hệ thống
+  pureAccountSettings: Tài khoản
+  pureLoginOut: Đăng xuất
   pureLogin: Đăng nhập
   pureOpenSystemSet: Mở cấu hình hệ thống
   pureReload: Tải lại
@@ -32,9 +32,9 @@ panel:
   pureClearCacheAndToLogin: Xóa cache và quay lại trang đăng nhập
   pureClearCache: Xóa cache
   pureOverallStyle: Phong cách tổng thể
-  pureOverallStyleLight: Giao diện sáng
+  pureOverallStyleLight:  Sáng
   pureOverallStyleLightTip: Sáng tạo mới, làm sáng không gian làm việc
-  pureOverallStyleDark: Giao diện tối
+  pureOverallStyleDark: Tối
   pureOverallStyleDarkTip: Nhẹ nhàng, thanh lịch trong bóng tối
   pureOverallStyleSystem: Tự động
   pureOverallStyleSystemTip: Tự động điều chỉnh theo thời gian trong ngày

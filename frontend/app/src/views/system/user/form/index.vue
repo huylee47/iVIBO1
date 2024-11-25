@@ -51,11 +51,11 @@ defineExpose({ getRef });
   >
     <el-row :gutter="30">
       <re-col :value="12" :xs="24" :sm="24">
-        <el-form-item label="用户昵称" prop="nickname">
+        <el-form-item label="用户Tên" prop="nickname">
           <el-input
             v-model="newFormInline.nickname"
             clearable
-            placeholder="请输入用户昵称"
+            placeholder="请输入用户Tên"
           />
         </el-form-item>
       </re-col>
@@ -94,11 +94,11 @@ defineExpose({ getRef });
       </re-col>
 
       <re-col :value="12" :xs="24" :sm="24">
-        <el-form-item label="邮箱" prop="email">
+        <el-form-item label="E-mail" prop="email">
           <el-input
             v-model="newFormInline.email"
             clearable
-            placeholder="请输入邮箱"
+            placeholder="请输入E-mail"
           />
         </el-form-item>
       </re-col>

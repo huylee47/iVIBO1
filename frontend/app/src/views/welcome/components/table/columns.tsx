@@ -12,7 +12,7 @@ export function useColumns() {
   const columns: TableColumnList = [
     {
       sortable: true,
-      label: "序号",
+      label: "ID",
       prop: "id"
     },
     {
@@ -60,11 +60,11 @@ export function useColumns() {
     },
     {
       sortable: true,
-      label: "统计日期",
+      label: "Ngày thống kê",
       prop: "date"
     },
     {
-      label: "操作",
+      label: "Vận hành",
       fixed: "right",
       slot: "operation"
     }

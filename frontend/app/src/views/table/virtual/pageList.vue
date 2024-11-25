@@ -27,7 +27,7 @@ const pagerConfig = reactive({
 });
 
 const columns = [
-  { type: "seq", field: "seq", title: "序号", width: 100 },
+  { type: "seq", field: "seq", title: "ID", width: 100 },
   { field: "name", title: "名称", sortable: true },
   { field: "role", title: "角色" },
   { field: "sex", title: "性别" }

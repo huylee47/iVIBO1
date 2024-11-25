@@ -23,7 +23,7 @@ export const useUserStore = defineStore({
     avatar: storageLocal().getItem<DataInfo<number>>(userKey)?.avatar ?? "",
     // 用户名
     username: storageLocal().getItem<DataInfo<number>>(userKey)?.username ?? "",
-    // 昵称
+    // Tên
     nickname: storageLocal().getItem<DataInfo<number>>(userKey)?.nickname ?? "",
     // 页面级别权限
     roles: storageLocal().getItem<DataInfo<number>>(userKey)?.roles ?? [],
@@ -48,7 +48,7 @@ export const useUserStore = defineStore({
     SET_USERNAME(username: string) {
       this.username = username;
     },
-    /** 存储昵称 */
+    /** 存储Tên */
     SET_NICKNAME(nickname: string) {
       this.nickname = nickname;
     },

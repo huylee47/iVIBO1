@@ -2,7 +2,7 @@ import { defineFakeRoute } from "vite-plugin-fake-server/client";
 import { faker } from "@faker-js/faker/locale/zh_CN";
 
 export default defineFakeRoute([
-  // 账户设置-个人信息
+  // 账户设置-Thông tin cá nhân
   {
     url: "/mine",
     method: "get",
@@ -12,15 +12,15 @@ export default defineFakeRoute([
         data: {
           avatar: "https://avatars.githubusercontent.com/u/44761321",
           username: "admin",
-          nickname: "小铭",
-          email: "pureadmin@163.com",
+          nickname: "admin",
+          email: " contact@ouransoft.vn",
           phone: "15888886789",
-          description: "一个热爱开源的前端工程师"
+          description: "Chao xìn"
         }
       };
     }
   },
-  // 账户设置-个人安全日志
+  // 账户设置-个人Nhật ký
   {
     url: "/mine-logs",
     method: "get",
