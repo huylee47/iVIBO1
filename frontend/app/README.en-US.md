@@ -229,7 +229,7 @@ For more detailed browser compatibility support, please see [Which browsers does
 
 Completely free and open source
 
-[MIT © 2020-present, pure-admin](./LICENSE)
+[MIT © 2019-present, pure-admin](./LICENSE)
 
 ## `Star`
 
