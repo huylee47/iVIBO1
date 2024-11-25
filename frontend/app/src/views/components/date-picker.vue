@@ -45,7 +45,7 @@ const value4 = ref("");
 const value5 = ref("");
 const shortcuts1 = [
   {
-    text: "上周",
+    text: "Tuần trước",
     value: () => {
       const end = new Date();
       const start = new Date();

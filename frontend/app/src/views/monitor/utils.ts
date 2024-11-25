@@ -39,7 +39,7 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "本周",
+      text: "Tuần này",
       value: () => {
         const today = new Date();
         const startOfWeek = new Date(
@@ -60,7 +60,7 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "上周",
+      text: "Tuần trước",
       value: () => {
         const today = new Date();
         const startOfLastWeek = new Date(

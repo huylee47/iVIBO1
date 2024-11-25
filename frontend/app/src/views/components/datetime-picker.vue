@@ -38,7 +38,7 @@ const datetimeFormat = ref("");
 const value2 = ref("");
 const shortcuts1 = [
   {
-    text: "上周",
+    text: "Tuần trước",
     value: () => {
       const end = new Date();
       const start = new Date();

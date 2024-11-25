@@ -4,16 +4,16 @@ import Question from "@iconify-icons/ri/question-answer-line";
 import CheckLine from "@iconify-icons/ri/chat-check-line";
 import Smile from "@iconify-icons/ri/star-smile-line";
 
-const days = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+const days = ["Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 5", "Thứ 7"];
 
-/** 需求人数、提问数量、解决数量、用户满意度 */
+/** Nhân sự、Phản hồi、Hoàn thành、Đánh giá người dùng */
 const chartData = [
   {
     icon: GroupLine,
     bgColor: "#effaff",
     color: "#41b6ff",
     duration: 2200,
-    name: "需求人数",
+    name: "Nhân sự",
     value: 36000,
     percent: "+88%",
     data: [2101, 5288, 4239, 4962, 6752, 5208, 7450] // 平滑折线图数据
@@ -23,7 +23,7 @@ const chartData = [
     bgColor: "#fff5f4",
     color: "#e85f33",
     duration: 1600,
-    name: "提问数量",
+    name: "Phản hồi",
     value: 16580,
     percent: "+70%",
     data: [2216, 1148, 1255, 788, 4821, 1973, 4379]
@@ -33,7 +33,7 @@ const chartData = [
     bgColor: "#eff8f4",
     color: "#26ce83",
     duration: 1500,
-    name: "解决数量",
+    name: "Hoàn thành",
     value: 16499,
     percent: "+99%",
     data: [861, 1002, 3195, 1715, 3666, 2415, 3645]
@@ -43,14 +43,14 @@ const chartData = [
     bgColor: "#f6f4fe",
     color: "#7846e5",
     duration: 100,
-    name: "用户满意度",
+    name: "Đánh giá người dùng",
     value: 100,
     percent: "+100%",
     data: [100]
   }
 ];
 
-/** 分析概览 */
+/** Thống kê */
 const barChartData = [
   {
     requireData: [2101, 5288, 4239, 4962, 6752, 5208, 7450],
@@ -62,53 +62,53 @@ const barChartData = [
   }
 ];
 
-/** 解决概率 */
+/** Tiến độ  */
 const progressData = [
   {
-    week: "周一",
+    week: "Thứ 2",
     percentage: 85,
     duration: 110,
     color: "#41b6ff"
   },
   {
-    week: "周二",
+    week: "Thứ 3",
     percentage: 86,
     duration: 105,
     color: "#41b6ff"
   },
   {
-    week: "周三",
+    week: "Thứ 4",
     percentage: 88,
     duration: 100,
     color: "#41b6ff"
   },
   {
-    week: "周四",
+    week: "Thứ 5",
     percentage: 89,
     duration: 95,
     color: "#41b6ff"
   },
   {
-    week: "周五",
+    week: "Thứ 6",
     percentage: 94,
     duration: 90,
     color: "#26ce83"
   },
   {
-    week: "周六",
+    week: "Thứ 7",
     percentage: 96,
     duration: 85,
     color: "#26ce83"
   },
   {
-    week: "周日",
+    week: "Chủ nhật",
     percentage: 100,
     duration: 80,
     color: "#26ce83"
   }
 ].reverse();
 
-/** 数据统计 */
+/** Thống kê bảng */
 const tableData = Array.from({ length: 30 }).map((_, index) => {
   return {
     id: index + 1,
@@ -120,7 +120,7 @@ const tableData = Array.from({ length: 30 }).map((_, index) => {
   };
 });
 
-/** 最新动态 */
+/** Tin mới */
 const latestNewsData = cloneDeep(tableData)
   .slice(0, 14)
   .map((item, index) => {

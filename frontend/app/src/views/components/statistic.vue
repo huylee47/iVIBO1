@@ -50,7 +50,7 @@ function reset() {
 
       <el-row :gutter="24">
         <re-col :value="6" :xs="24" :sm="24">
-          <el-statistic title="需求人数" :value="outputValue" />
+          <el-statistic title="Nhân sự" :value="outputValue" />
         </re-col>
 
         <re-col :value="6" :xs="24" :sm="24">

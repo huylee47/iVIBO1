@@ -15,13 +15,13 @@ defineOptions({
 
 const { isDark } = useDark();
 
-let curWeek = ref(1); // 0上周、1本周
+let curWeek = ref(1); // 0Tuần trước、1Tuần này
 const optionsBasis: Array<OptionsType> = [
   {
-    label: "上周"
+    label: "Tuần trước"
   },
   {
-    label: "本周"
+    label: "Tuần này"
   }
 ];
 </script>
@@ -108,7 +108,7 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card class="bar-card" shadow="never">
           <div class="flex justify-between">
-            <span class="text-md font-medium">分析概览</span>
+            <span class="text-md font-medium">Thống kê</span>
             <Segmented v-model="curWeek" :options="optionsBasis" />
           </div>
           <div class="flex justify-between items-start mt-3">
@@ -139,7 +139,7 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card shadow="never">
           <div class="flex justify-between">
-            <span class="text-md font-medium">解决概率</span>
+            <span class="text-md font-medium">Tiến độ </span>
           </div>
           <div
             v-for="(item, index) in progressData"
@@ -186,7 +186,7 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card shadow="never" class="h-[580px]">
           <div class="flex justify-between">
-            <span class="text-md font-medium">数据统计</span>
+            <span class="text-md font-medium">Thống kê bảng</span>
           </div>
           <WelcomeTable class="mt-3" />
         </el-card>
@@ -211,7 +211,7 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card shadow="never">
           <div class="flex justify-between">
-            <span class="text-md font-medium">最新动态</span>
+            <span class="text-md font-medium">Tin mới</span>
           </div>
           <el-scrollbar max-height="504" class="mt-3">
             <el-timeline>
@@ -233,7 +233,7 @@ const optionsBasis: Array<OptionsType> = [
               >
                 <p class="text-text_color_regular text-sm">
                   {{
-                    `新增 ${item.requiredNumber} 条问题，${item.resolveNumber} 条已解决`
+                    `Mới ${item.requiredNumber} câu hỏi,${item.resolveNumber} giải quyết`
                   }}
                 </p>
               </el-timeline-item>
@@ -249,12 +249,12 @@ const optionsBasis: Array<OptionsType> = [
 :deep(.el-card) {
   --el-card-border-color: none;
 
-  /* 解决概率进度条宽度 */
+  /* Tiến độ 进度条宽度 */
   .el-progress--line {
     width: 85%;
   }
 
-  /* 解决概率进度条字体大小 */
+  /* Tiến độ 进度条字体大小 */
   .el-progress-bar__innerText {
     font-size: 15px;
   }

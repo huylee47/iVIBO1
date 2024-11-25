@@ -16,63 +16,63 @@ const dynamicSize = ref();
 
 const optionsBasis: Array<OptionsType> = [
   {
-    label: "周一"
+    label: "Thứ 2"
   },
   {
-    label: "周二"
+    label: "thứ 3"
   },
   {
-    label: "周三"
+    label: "Thứ 4"
   },
   {
-    label: "周四"
+    label: "Thứ 5"
   },
   {
-    label: "周五"
+    label: "Thứ 6"
   }
 ];
 
 /** tooltip 提示 */
 const optionsTooltip: Array<OptionsType> = [
   {
-    label: "周一",
-    tip: "周一启航，新的篇章"
+    label: "Thứ 2",
+    tip: "Thứ 2启航，新的篇章"
   },
   {
-    label: "周二",
-    tip: "周二律动，携手共进"
+    label: "Thứ 3",
+    tip: "Thứ 3律动，携手共进"
   },
   {
-    label: "周三",
-    tip: "周三昂扬，激情不减"
+    label: "Thứ 4",
+    tip: "Thứ 4昂扬，激情不减"
   },
   {
-    label: "周四",
-    tip: "周四精进，事半功倍"
+    label: "Thứ 5",
+    tip: "Thứ 5精进，事半功倍"
   },
   {
-    label: "周五",
-    tip: "周五喜悦，收尾归档"
+    label: "Thứ 6",
+    tip: "Thứ 6喜悦，收尾归档"
   }
 ];
 
 /** 禁用 */
 const optionsDisabled: Array<OptionsType> = [
   {
-    label: "周一"
+    label: "Thứ 2"
   },
   {
-    label: "周二"
+    label: "Thứ 3"
   },
   {
-    label: "周三",
+    label: "Thứ 4",
     disabled: true
   },
   {
-    label: "周四"
+    label: "Thứ 5"
   },
   {
-    label: "周五",
+    label: "Thứ 6",
     disabled: true
   }
 ];
@@ -80,41 +80,41 @@ const optionsDisabled: Array<OptionsType> = [
 /** block */
 const optionsBlock: Array<OptionsType> = [
   {
-    label: "周一"
+    label: "Thứ 2"
   },
   {
-    label: "周二"
+    label: "Thứ 3"
   },
   {
-    label: "周三"
+    label: "Thứ 4"
   },
   {
-    label: "周四"
+    label: "Thứ 5"
   },
   {
-    label: "周五喜悦，收尾归档，周末倒计时",
-    tip: "周五喜悦，收尾归档，周末倒计时"
+    label: "Thứ 6喜悦，收尾归档，周末倒计时",
+    tip: "Thứ 6喜悦，收尾归档，周末倒计时"
   }
 ];
 
 /** 可设置图标 */
 const optionsIcon: Array<OptionsType> = [
   {
-    label: "周一",
+    label: "Thứ 2",
     icon: HomeFilled
   },
   {
-    label: "周二"
+    label: "Thứ 3"
   },
   {
-    label: "周三",
+    label: "Thứ 4",
     icon: "ri:terminal-window-line"
   },
   {
-    label: "周四"
+    label: "Thứ 5"
   },
   {
-    label: "周五",
+    label: "Thứ 6",
     icon: "streamline-emojis:2"
   }
 ];
@@ -146,7 +146,7 @@ const optionsLabel: Array<OptionsType> = [
         {h(useRenderIcon(HomeFilled), {
           class: "m-auto mt-1 w-[18px] h-[18px]"
         })}
-        <p>周一</p>
+        <p>Thứ 2</p>
       </div>
     )
   },
@@ -156,7 +156,7 @@ const optionsLabel: Array<OptionsType> = [
         {h(useRenderIcon("ri:terminal-window-line"), {
           class: "m-auto mt-1 w-[18px] h-[18px]"
         })}
-        <p>周二</p>
+        <p>Thứ 3</p>
       </div>
     )
   },
@@ -166,7 +166,7 @@ const optionsLabel: Array<OptionsType> = [
         {h(useRenderIcon("streamline-emojis:cow-face"), {
           class: "m-auto mt-1 w-[18px] h-[18px]"
         })}
-        <p>周三</p>
+        <p>Thứ 4</p>
       </div>
     )
   }
@@ -174,15 +174,15 @@ const optionsLabel: Array<OptionsType> = [
 
 const optionsChange: Array<OptionsType> = [
   {
-    label: "周一",
+    label: "Thứ 2",
     value: 1
   },
   {
-    label: "周二",
+    label: "Thứ 3",
     value: 2
   },
   {
-    label: "周三",
+    label: "Thứ 4",
     value: 3
   }
 ];

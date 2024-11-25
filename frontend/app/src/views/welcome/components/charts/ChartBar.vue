@@ -41,7 +41,7 @@ watch(
         right: 0
       },
       legend: {
-        data: ["需求人数", "提问数量"],
+        data: ["Nhân sự", "Phản hồi"],
         textStyle: {
           color: "#606266",
           fontSize: "0.875rem"
@@ -51,7 +51,15 @@ watch(
       xAxis: [
         {
           type: "category",
-          data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"],
+          data: [
+            "Thứ 2",
+            "Thứ 3",
+            "Thứ 4",
+            "Thứ 5",
+            "Thứ 6",
+            "Thứ 7",
+            "Chủ nhật"
+          ],
           axisLabel: {
             fontSize: "0.875rem"
           },
@@ -74,7 +82,7 @@ watch(
       ],
       series: [
         {
-          name: "需求人数",
+          name: "Nhân sự",
           type: "bar",
           barWidth: 10,
           itemStyle: {
@@ -84,7 +92,7 @@ watch(
           data: props.requireData
         },
         {
-          name: "提问数量",
+          name: "Phản hồi",
           type: "bar",
           barWidth: 10,
           itemStyle: {
