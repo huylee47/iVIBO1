@@ -103,7 +103,7 @@ watch(size, val =>
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/check-button.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/check-button.vue"
         target="_blank"
       >
         代码位置 src/views/components/check-button.vue

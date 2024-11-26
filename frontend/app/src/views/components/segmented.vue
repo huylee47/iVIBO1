@@ -213,7 +213,7 @@ watch(size, val => (dynamicSize.value = size.value));
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/segmented.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/segmented.vue"
         target="_blank"
       >
         代码位置 src/views/components/segmented.vue

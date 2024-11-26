@@ -22,7 +22,7 @@ const throttleClick = throttle(handle);
         <p class="font-medium">防抖：debounce</p>
         <el-link
           class="mt-2"
-          href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/able/debounce.vue"
+          href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/able/debounce.vue"
           target="_blank"
         >
           代码位置 src/views/able/debounce.vue

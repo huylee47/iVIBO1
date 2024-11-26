@@ -136,7 +136,7 @@ onBeforeUnmount(() => {
         </span>
         <el-link
           class="mt-2"
-          href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/able/video-frame"
+          href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/able/video-frame"
           target="_blank"
         >
           代码位置 src/views/able/video-frame

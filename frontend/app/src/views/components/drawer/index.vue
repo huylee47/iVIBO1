@@ -440,7 +440,7 @@ function onSureBtnLoading() {
         </span>
       </div>
       <el-link
-        href="https://github.com/pure-admin/vue-pure-admin/tree/main/src/views/components/drawer"
+        href="https://ouransoft.vn/vue-pure-admin/tree/main/src/views/components/drawer"
         target="_blank"
       >
         代码位置 src/views/components/drawer

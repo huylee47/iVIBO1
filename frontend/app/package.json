@@ -32,13 +32,13 @@
     "vite",
     "esm"
   ],
-  "homepage": "https://github.com/pure-admin/vue-pure-admin",
+  "homepage": "https://ouransoft.vn/vue-pure-admin",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pure-admin/vue-pure-admin.git"
+    "url": "git+https://ouransoft.vn/vue-pure-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/pure-admin/vue-pure-admin/issues"
+    "url": "https://ouransoft.vn/vue-pure-admin/issues"
   },
   "license": "MIT",
   "author": {

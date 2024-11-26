@@ -29,7 +29,7 @@ const handleChange = value => {
       <p class="font-medium">区域级联选择器</p>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/cascader.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/cascader.vue"
         target="_blank"
       >
         代码位置 src/views/components/cascader.vue

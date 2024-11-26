@@ -31,7 +31,7 @@ function down() {
       <p class="font-medium">文件下载功能</p>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/able/download.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/able/download.vue"
         target="_blank"
       >
         代码位置 src/views/able/download.vue

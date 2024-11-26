@@ -88,7 +88,7 @@ const onTour = () => {
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/guide/index.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/guide/index.vue"
         target="_blank"
       >
         代码位置 src/views/guide/index.vue

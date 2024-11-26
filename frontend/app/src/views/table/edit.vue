@@ -20,7 +20,7 @@ function tabClick({ index }) {
         <span class="font-medium">
           可编辑用法全部采用 TSX 语法，充分发挥
           <el-link
-            href="https://github.com/pure-admin/pure-admin-table"
+            href="https://ouransoft.vn/pure-admin-table"
             target="_blank"
             style="margin: 0 4px 5px; font-size: 16px"
           >
@@ -31,7 +31,7 @@ function tabClick({ index }) {
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/table/edit"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/table/edit"
         target="_blank"
       >
         代码位置 src/views/table/edit

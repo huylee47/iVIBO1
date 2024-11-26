@@ -16,7 +16,7 @@ defineOptions({
         <p class="font-medium">右键菜单</p>
         <el-link
           class="mt-2"
-          href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/contextmenu"
+          href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/contextmenu"
           target="_blank"
         >
           代码位置 src/views/components/contextmenu

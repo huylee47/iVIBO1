@@ -14,7 +14,7 @@
     }
   }
 
-  /* 修复 windows 下双滚动条问题 https://github.com/pure-admin/vue-pure-admin/pull/936#issuecomment-1968125992 */
+  /* 修复 windows 下双滚动条问题 https://ouransoft.vn/vue-pure-admin/pull/936#issuecomment-1968125992 */
   .el-popper.pure-scrollbar {
     overflow: hidden;
   }

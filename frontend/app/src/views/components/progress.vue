@@ -25,7 +25,7 @@ const format = percentage => (percentage === 100 ? "Full" : `${percentage}%`);
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/progress.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/progress.vue"
         target="_blank"
       >
         代码位置 src/views/components/progress.vue
