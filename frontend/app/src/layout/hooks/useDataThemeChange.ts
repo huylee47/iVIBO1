@@ -18,21 +18,16 @@ import {
 export function useDataThemeChange() {
   const { layoutTheme, layout } = useLayout();
   const themeColors = ref<Array<themeColorsType>>([
-    /* 亮白色 */
-    { color: "#ffffff", themeColor: "light" },
-    /* 道奇蓝 */
+    /* 亮白色 */ /*trắng sáng*/ { color: "#ffffff", themeColor: "light" },
+    /* 道奇蓝 Mặc định*/
     { color: "#1b2a47", themeColor: "default" },
-    /* 深紫罗兰色 */
+    /* 深紫罗兰色 */ /*màu tím đậm */
     { color: "#722ed1", themeColor: "saucePurple" },
-    /* 深粉色 */
-    { color: "#eb2f96", themeColor: "pink" },
-    /* 猩红色 */
-    { color: "#f5222d", themeColor: "dusk" },
-    /* 橙红色 */
-    { color: "#fa541c", themeColor: "volcano" },
-    /* 绿宝石 */
-    { color: "#13c2c2", themeColor: "mingQing" },
-    /* 酸橙绿 */
+    /* 深粉色 */ /*hồng đậm*/ { color: "#eb2f96", themeColor: "pink" },
+    /* 猩红色 */ /*đỏ tươi*/ { color: "#f5222d", themeColor: "dusk" },
+    /* 橙红色 */ /*đỏ cam*/ { color: "#fa541c", themeColor: "volcano" },
+    /* 绿宝石 */ /*Ngọc lục bảo*/ { color: "#13c2c2", themeColor: "mingQing" },
+    /* 酸橙绿 */ /*màu xanh chanh*/
     { color: "#52c41a", themeColor: "auroraGreen" }
   ]);
 
@@ -49,6 +44,7 @@ export function useDataThemeChange() {
   }
 
   /** 设置导航主题色 */
+  /** Đặt màu chủ đề điều hướng */
   function setLayoutThemeColor(
     theme = getConfig().Theme ?? "light",
     isClick = true
@@ -58,6 +54,7 @@ export function useDataThemeChange() {
       scopeName: `layout-theme-${theme}`
     });
     // 如果非isClick，保留之前的themeColor
+    // Nếu không phải là isClick, giữ lại themeColor trước đó
     const storageThemeColor = $storage.layout.themeColor;
     $storage.layout = {
       layout: layout.value,
@@ -85,6 +82,7 @@ export function useDataThemeChange() {
   }
 
   /** 设置 `element-plus` 主题色 */
+  /** Đặt màu chủ đề `element-plus` */
   const setEpThemeColor = (color: string) => {
     useEpThemeStoreHook().setEpThemeColor(color);
     document.documentElement.style.setProperty("--el-color-primary", color);
@@ -97,6 +95,7 @@ export function useDataThemeChange() {
   };
 
   /** 浅色、深色整体风格切换 */
+  /** Chuyển đổi giữa phong cách tổng thể sáng và tối */
   function dataThemeChange(overall?: string) {
     overallStyle.value = overall;
     if (useEpThemeStoreHook().epTheme === "light" && dataTheme.value) {
@@ -116,6 +115,7 @@ export function useDataThemeChange() {
   }
 
   /** 清空缓存并返回登录页 */
+  /** Xóa bộ nhớ đệm và quay lại trang đăng nhập */
   function onReset() {
     removeToken();
     storageLocal().clear();

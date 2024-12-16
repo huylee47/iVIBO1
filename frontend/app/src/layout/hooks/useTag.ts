@@ -41,16 +41,19 @@ export function useTags() {
   const visible = ref(false);
   const activeIndex = ref(-1);
   // 当前右键选中的路由信息
+  // Thông tin định tuyến hiện được chọn bằng cách nhấp chuột phải
   const currentSelect = ref({});
   const isScrolling = ref(false);
 
   /** 显示模式，默认灵动模式 */
+  /** Chế độ hiển thị, chế độ thông minh mặc định */
   const showModel = ref(
     storageLocal().getItem<StorageConfigs>(
       `${responsiveStorageNameSpace()}configure`
     )?.showModel || "smart"
   );
   /** 是否隐藏标签页，默认显示 */
+  /** Có ẩn trang tab hay không, được hiển thị theo mặc định */
   const showTags =
     ref(
       storageLocal().getItem<StorageConfigs>(
@@ -166,6 +169,7 @@ export function useTags() {
   };
 
   /** 鼠标移入添加激活样式 */
+  /** Thêm kiểu kích hoạt khi chuột di chuyển */
   function onMouseenter(index) {
     if (index) activeIndex.value = index;
     if (unref(showModel) === "smart") {
@@ -181,6 +185,7 @@ export function useTags() {
   }
 
   /** 鼠标移出恢复默认样式 */
+  /** Di chuyển chuột ra ngoài để khôi phục kiểu mặc định */
   function onMouseleave(index) {
     activeIndex.value = -1;
     if (unref(showModel) === "smart") {
