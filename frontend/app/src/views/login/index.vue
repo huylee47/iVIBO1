@@ -57,21 +57,58 @@ const { title, getDropdownItemStyle, getDropdownItemClass } = useNav();
 const { locale, translationCh, translationEn } = useTranslationLang();
 
 const ruleForm = reactive({
-  username: "admin",
-  password: "admin123",
+  username: "",
+  password: "",
   verifyCode: ""
 });
 
+// const onLogin = async (formEl: FormInstance | undefined) => {
+//   if (!formEl) return;
+//   await formEl.validate(valid => {
+//     if (valid) {
+//       loading.value = true;
+//       useUserStoreHook()
+//         .loginByUsername({
+//           username: ruleForm.username,
+//           password: ruleForm.password
+//         })
+//         .then(res => {
+//           if (res.success) {
+//             // 获取后端路由
+//             return initRouter().then(() => {
+//               disabled.value = true;
+//               router
+//                 .push(getTopMenu(true).path)
+//                 .then(() => {
+//                   message(t("login.pureLoginSuccess"), { type: "success" });
+//                 })
+//                 .finally(() => (disabled.value = false));
+//             });
+//           } else {
+//             message(t("login.pureLoginFail"), { type: "error" });
+//           }
+//         })
+//         .finally(() => (loading.value = false));
+//     }
+//   });
+// };
 const onLogin = async (formEl: FormInstance | undefined) => {
   if (!formEl) return;
+
   await formEl.validate(valid => {
     if (valid) {
       loading.value = true;
+
       useUserStoreHook()
-        .loginByUsername({ username: ruleForm.username, password: "admin123" })
+        .loginByUsername({
+          username: ruleForm.username,
+          password: ruleForm.password
+        })
         .then(res => {
           if (res.success) {
-            // 获取后端路由
+            console.log("JSON từ backend:", res);
+            const token = res.data.token;
+            localStorage.setItem("token", token);
             return initRouter().then(() => {
               disabled.value = true;
               router
@@ -79,13 +116,23 @@ const onLogin = async (formEl: FormInstance | undefined) => {
                 .then(() => {
                   message(t("login.pureLoginSuccess"), { type: "success" });
                 })
-                .finally(() => (disabled.value = false));
+                .finally(() => {
+                  disabled.value = false;
+                });
             });
           } else {
-            message(t("login.pureLoginFail"), { type: "error" });
+            const errorMessage = res.message || t("login.pureLoginFail");
+            message(errorMessage, { type: "error" });
+            console.log("Thông báo lỗi:", errorMessage);
           }
         })
-        .finally(() => (loading.value = false));
+        .catch(error => {
+          console.error("Lỗi không mong muốn:", error);
+          message(t("login.pureLoginFail"), { type: "error" });
+        })
+        .finally(() => {
+          loading.value = false;
+        });
     }
   });
 };
@@ -335,7 +382,7 @@ watch(loginDay, value => {
     <div
       class="w-full flex-c absolute bottom-3 text-sm text-[rgba(0,0,0,0.6)] dark:text-[rgba(220,220,242,0.8)]"
     >
-      Copyright © 2020-present
+      Copyright © 2019-present
       <a class="hover:text-primary" href="https://ouransoft.vn" target="_blank">
         &nbsp;{{ title }}
       </a>
