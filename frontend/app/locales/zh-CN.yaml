@@ -231,7 +231,7 @@ login:
   pureVerifyCodeSixReg: Vui lòng nhập mã xác nhận 6 chữ số
   purePhoneReg: Vui lòng nhập số điện thoại
   purePhoneCorrectReg: Vui lòng nhập đúng định dạng số điện thoại
-  purePassWordRuleReg: Mật khẩu phải từ 8-18 ký tự, bao gồm ít nhất hai loại như số, chữ cái hoặc ký tự đặc biệt
+  purePassWordRuleReg: Mật khẩu từ 6 ký tự
   purePassWordSureReg: Vui lòng nhập mật khẩu xác nhận
   purePassWordDifferentReg: Hai mật khẩu không khớp!
   purePassWordUpdateReg: Đổi mật khẩu thành công
