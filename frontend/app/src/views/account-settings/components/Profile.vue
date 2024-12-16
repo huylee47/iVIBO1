@@ -75,14 +75,14 @@ const handleSubmitImage = () => {
   formUpload(formData)
     .then(({ success, data }) => {
       if (success) {
-        message("Tải ảnh lên成功", { type: "success" });
+        message("Tải thành công", { type: "success" });
         handleClose();
       } else {
-        message("Tải ảnh lên失败");
+        message("Tải thất bại");
       }
     })
     .catch(error => {
-      message(`提交异常 ${error}`, { type: "error" });
+      message(`có lỗi xảy ra ${error}`, { type: "error" });
     });
 };
 
@@ -91,7 +91,8 @@ const onSubmit = async (formEl: FormInstance) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       console.log(userInfos);
-      message("更新信息成功", { type: "success" });
+      // 更新信息成功
+      message("Cập nhật thông tin thành công", { type: "success" });
     } else {
       console.log("error submit!", fields);
     }
@@ -165,7 +166,8 @@ getMine().then(res => {
         />
       </el-form-item>
       <el-button type="primary" @click="onSubmit(userInfoFormRef)">
-        更新信息
+        <!-- 更新信息 -->
+        Cập nhật thông tin
       </el-button>
     </el-form>
     <el-dialog
@@ -180,9 +182,9 @@ getMine().then(res => {
       <ReCropperPreview ref="cropRef" :imgSrc="imgSrc" @cropper="onCropper" />
       <template #footer>
         <div class="dialog-footer">
-          <el-button bg text @click="handleClose">取消</el-button>
+          <el-button bg text @click="handleClose">Huỷ</el-button>
           <el-button bg text type="primary" @click="handleSubmitImage">
-            确定
+            Xác nhận
           </el-button>
         </div>
       </template>
