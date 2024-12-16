@@ -29,19 +29,19 @@ export default defineFakeRoute([
         {
           id: 1,
           ip: faker.internet.ipv4(),
-          address: "中国河南省信阳市",
+          address: "Số 3 đường Lê Hồng Phong , Hải An , Hải Phòng",
           system: "macOS",
           browser: "Chrome",
-          summary: "账户登录", // 详情
-          operatingTime: new Date() // 时间
+          summary: "Đăng nhập tài khoản", // 详情 Chi tiết
+          operatingTime: new Date() // 时间 thời gian
         },
         {
           id: 2,
           ip: faker.internet.ipv4(),
-          address: "中国广东省深圳市",
+          address: "Số 3 đường Lê Hồng Phong , Hải An , Hải Phòng",
           system: "Windows",
           browser: "Firefox",
-          summary: "绑定了手机号码",
+          summary: "Đăng nhập tài khoản",
           operatingTime: new Date().setDate(new Date().getDate() - 1)
         }
       ];
@@ -49,9 +49,9 @@ export default defineFakeRoute([
         success: true,
         data: {
           list,
-          total: list.length, // 总条目数
-          pageSize: 10, // 每页显示条目个数
-          currentPage: 1 // 当前页数
+          total: list.length, // 总条目数 Tổng số mục
+          pageSize: 10, // 每页显示条目个数 Số mục được hiển thị trên mỗi trang
+          currentPage: 1 // 当前页数 Số trang hiện tại
         }
       };
     }
