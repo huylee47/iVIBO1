@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import axios from "axios";
+import { ref, onMounted, watch } from "vue";
 import { useGeolocation } from "@vueuse/core";
+import axios from "axios";
 
 const { coords, error } = useGeolocation();
+const mapContainer = ref<HTMLElement | null>(null);
+
+const isValidCoordinates = (lat: number, lng: number): boolean => {
+  return lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180;
+};
 
 const handleCheckIn = async () => {
   const token = localStorage.getItem("token");
@@ -38,13 +44,53 @@ const handleCheckIn = async () => {
     alert(error.response?.data?.message || "Có lỗi xảy ra!");
   }
 };
+
+const initializeMap = () => {
+  if (coords.value.latitude && coords.value.longitude && mapContainer.value) {
+    if (!isValidCoordinates(coords.value.latitude, coords.value.longitude)) {
+      console.error("Vị trí không hợp lệ .");
+      alert("Vị trí không hợp lệ. Không thể khởi tạo bản đồ.");
+      return;
+    }
+
+    try {
+      goongjs.accessToken = "tAF4YwqaL2jDx5Ykq6wtatkM0U8cOFb6UbsjO3pw";
+      const map = new goongjs.Map({
+        container: mapContainer.value,
+        style: "https://tiles.goong.io/assets/goong_map_web.json",
+        center: [coords.value.longitude, coords.value.latitude],
+        zoom: 15
+      });
+
+      new goongjs.Marker()
+        .setLngLat([coords.value.longitude, coords.value.latitude])
+        .addTo(map);
+    } catch (err) {
+      console.error("Lỗi khi khởi tạo bản đồ:", err);
+      alert("Không thể khởi tạo bản đồ.");
+    }
+  } else {
+    console.error("Vị trí không hợp lệ hoặc không có div bản đồ.");
+    alert("Không thể lấy vị trí hoặc không có div bản đồ.");
+  }
+};
+
+watch(
+  () => coords.value,
+  newCoords => {
+    if (newCoords.latitude !== Infinity && newCoords.longitude !== Infinity) {
+      initializeMap();
+    }
+  },
+  { immediate: true }
+);
 </script>
+
 <template>
   <div>
     <h2>Chấm công</h2>
+    <div id="map" ref="mapContainer" style="width: 100%; height: 400px" />
     <div v-if="!error">
-      <p><strong>Vĩ độ:</strong> {{ coords.latitude }}</p>
-      <p><strong>Kinh độ:</strong> {{ coords.longitude }}</p>
       <p><strong>Độ chính xác:</strong> {{ coords.accuracy }} m</p>
       <button @click="handleCheckIn">Check-in</button>
     </div>
