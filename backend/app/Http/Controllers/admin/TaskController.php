@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\TaskRequest;
 use App\Service\TaskService;
 use Illuminate\Http\Request;
 
@@ -17,5 +18,8 @@ class TaskController extends Controller
     }
     public function indexId(){
         return $this->taskService->indexId();
+    }
+    public function create(TaskRequest $request){
+        return $this->taskService->store($request);
     }
 }
