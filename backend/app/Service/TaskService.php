@@ -52,7 +52,6 @@ class TaskService {
             'task_name' => $request->task_name,
             'project_id' => $request->project_id,
             'status_id' => $request->status_id,
-            'user_id' => $request->user_id,
            'start_time'=> $request->start_time,
             'end_time'=> $request->end_time,
         ]);
