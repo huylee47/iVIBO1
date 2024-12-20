@@ -25,8 +25,6 @@ Route::middleware(['auth:sanctum','abilities:admin'])->group(function(){
     Route::prefix('user')->group(function (){
         Route::get('/', [UserController::class,'index']);
         Route::post('/store',[UserController::class,'store']);
-        Route::get('/show/{id}',[UserController::class,'show']);
-        Route::put('/update/{id}',[UserController::class,'update']);
         Route::delete('/delete/{id}',[UserController::class,'destroy']);
     });
     Route::prefix('check-log')->group(function (){
@@ -50,5 +48,8 @@ Route::middleware(['auth:sanctum'])->group(function (){
     Route::prefix('check-in')->group(function (){
         Route::post('/',[TimeKeepingController::class,'checkIn']);
     });
-
+    Route::prefix('user')->group(function (){
+        Route::get('/show/{id}',[UserController::class,'show']);
+        Route::put('/update/{id}',[UserController::class,'update']);
+    });
 });
