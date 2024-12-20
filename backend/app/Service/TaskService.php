@@ -47,17 +47,17 @@ class TaskService {
 
     return response()->json($formatTask, 200, [], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
-    // public function store(TaskRequest $request){
-    //     $task = Task::create([
-    //         'task_name' => $request->task_name,
-    //         'project_id' => $request->project_id,
-    //         'status_id' => $request->status_id,
-    //         'user_id' => $request->user_id,
-    //        'start_time'=> $request->start_time,
-    //         'end_time'=> $request->end_time,
-    //     ]);
-    //     return response()->json($task);
-    // }
+    public function store(TaskRequest $request){
+        $task = Task::create([
+            'task_name' => $request->task_name,
+            'project_id' => $request->project_id,
+            'status_id' => $request->status_id,
+            'user_id' => $request->user_id,
+           'start_time'=> $request->start_time,
+            'end_time'=> $request->end_time,
+        ]);
+        return response()->json($task);
+    }
     // public function show($id){
     //     $task = Task::with('project:id,project_name','status:id,status_name','user:id,name')->findOrFail($id);
     //     return response()->json([
