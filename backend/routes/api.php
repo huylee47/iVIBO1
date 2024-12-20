@@ -39,6 +39,7 @@ Route::middleware(['auth:sanctum','abilities:admin'])->group(function(){
     // });
     Route::prefix('task')->group(function (){
         Route::get('/list',[TaskController::class,'index']);
+        Route::put('/adjustTime/{$id}',[TaskController::class,'adjustTime']);
     });
 });
 Route::middleware(['auth:sanctum'])->group(function (){
