@@ -16,6 +16,8 @@ import en from "element-plus/es/locale/lang/en";
 import zhCn from "element-plus/es/locale/lang/zh-cn";
 import plusEn from "plus-pro-components/es/locale/lang/en";
 import plusZhCn from "plus-pro-components/es/locale/lang/zh-cn";
+import vi from "element-plus/es/locale/lang/vi";
+// import plusVi from "plus-pro-components/es/locale/lang/vi";
 
 export default defineComponent({
   name: "app",
@@ -26,8 +28,8 @@ export default defineComponent({
   },
   computed: {
     currentLocale() {
-      return this.$storage.locale?.locale === "zh"
-        ? { ...zhCn, ...plusZhCn }
+      return this.$storage.locale?.locale === "vi"
+        ? { ...vi, ...plusZhCn }
         : { ...en, ...plusEn };
     }
   },
