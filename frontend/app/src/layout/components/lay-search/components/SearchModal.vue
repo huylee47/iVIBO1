@@ -113,7 +113,7 @@ function search() {
       ? transformI18n(menu.meta?.title)
           .toLocaleLowerCase()
           .includes(keyword.value.toLocaleLowerCase().trim()) ||
-        (locale.value === "vi" &&
+        (locale.value === "zh" &&
           !isAllEmpty(
             match(
               transformI18n(menu.meta?.title).toLocaleLowerCase(),

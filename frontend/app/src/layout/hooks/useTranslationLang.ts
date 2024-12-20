@@ -9,8 +9,8 @@ export function useTranslationLang(ref?: Ref) {
   const route = useRoute();
 
   function translationCh() {
-    $storage.locale = { locale: "vi" };
-    locale.value = "vi";
+    $storage.locale = { locale: "zh" };
+    locale.value = "zh";
     ref && handleResize(ref.value);
   }
 
@@ -28,7 +28,7 @@ export function useTranslationLang(ref?: Ref) {
   );
 
   onBeforeMount(() => {
-    locale.value = $storage.locale?.locale ?? "vi";
+    locale.value = $storage.locale?.locale ?? "zh";
   });
 
   return {

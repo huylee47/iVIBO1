@@ -14,7 +14,7 @@ defineOptions({
 onMounted(() => {
   new Player({
     id: "mse",
-    lang: "vi",
+    lang: "zh",
     // 默认静音
     volume: 0,
     autoplay: false,

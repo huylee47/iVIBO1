@@ -28,7 +28,7 @@ export default defineComponent({
   },
   computed: {
     currentLocale() {
-      return this.$storage.locale?.locale === "vi"
+      return this.$storage.locale?.locale === "zh"
         ? { ...vi, ...plusZhCn }
         : { ...en, ...plusEn };
     }
