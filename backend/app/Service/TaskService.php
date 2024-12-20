@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Http\Requests\TaskRequest;
 use App\Models\Task;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class TaskService {
@@ -46,6 +47,17 @@ class TaskService {
     });
 
     return response()->json($formatTask, 200, [], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    }
+    public function adjustTime(Request $request, $id){
+        $task = Task::find($id);
+        if ($request->has('start_time')) {
+        $task->start_time = $request->start_time;
+        }
+        if ($request->has('end_time')) {
+        $task->end_time = $request->end_time;
+        }
+        $task->save();
+        return response()->json($task);
     }
     // public function store(TaskRequest $request){
     //     $task = Task::create([
