@@ -38,7 +38,7 @@ Route::middleware(['auth:sanctum','abilities:admin'])->group(function(){
     //     Route::delete('/delete/{id}',[ProjectController::class,'destroy']);
     // });
     Route::prefix('task')->group(function (){
-        Route::get('/list',[TaskController::class,'index']);
+        Route::post('/store',[TaskController::class,'store']);
     });
 });
 Route::middleware(['auth:sanctum'])->group(function (){
@@ -51,5 +51,8 @@ Route::middleware(['auth:sanctum'])->group(function (){
     Route::prefix('user')->group(function (){
         Route::get('/show/{id}',[UserController::class,'show']);
         Route::put('/update/{id}',[UserController::class,'update']);
+    });
+        Route::prefix('task')->group(function (){
+        Route::get('/list',[TaskController::class,'index']);
     });
 });
