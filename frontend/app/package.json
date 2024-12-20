@@ -48,6 +48,10 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
+    "@fullcalendar/common": "^5.11.5",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
     "@goongmaps/goong-js": "^1.0.9",
     "@howdyjs/mouse-menu": "^2.1.6",
     "@infectoone/vue-ganttastic": "^2.3.2",
