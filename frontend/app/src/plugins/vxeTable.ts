@@ -50,7 +50,7 @@ import {
 // 全局默认参数
 VXETable.setConfig({
   // i18n: (key, args) => {
-  //   return unref(i18n.global.locale) === "zh"
+  //   return unref(i18n.global.locale) === "vi"
   //     ? XEUtils.toFormatString(XEUtils.get(zh, key), args)
   //     : XEUtils.toFormatString(XEUtils.get(en, key), args);
   // },

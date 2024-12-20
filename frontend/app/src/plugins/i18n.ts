@@ -106,7 +106,7 @@ export const i18n: I18n = createI18n({
   locale:
     storageLocal().getItem<StorageConfigs>(
       `${responsiveStorageNameSpace()}locale`
-    )?.locale ?? "zh",
+    )?.locale ?? "vi",
   fallbackLocale: "en",
   messages: localesConfigs
 });

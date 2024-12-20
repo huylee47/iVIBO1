@@ -19,8 +19,8 @@ export function useLayout() {
     /** 国际化 */
     /** Quốc tế hóa */
     if (!$storage.locale) {
-      $storage.locale = { locale: $config?.Locale ?? "zh" };
-      useI18n().locale.value = $config?.Locale ?? "zh";
+      $storage.locale = { locale: $config?.Locale ?? "vi" };
+      useI18n().locale.value = $config?.Locale ?? "vi";
     }
     /** 导航 */
     /** Điều hướng */
