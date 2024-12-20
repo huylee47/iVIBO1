@@ -13,11 +13,14 @@ import { ElConfigProvider } from "element-plus";
 import { ReDialog } from "@/components/ReDialog";
 import { ReDrawer } from "@/components/ReDrawer";
 import en from "element-plus/es/locale/lang/en";
-import zhCn from "element-plus/es/locale/lang/zh-cn";
+// import zhCn from "element-plus/es/locale/lang/zh-cn";
 import plusEn from "plus-pro-components/es/locale/lang/en";
 import plusZhCn from "plus-pro-components/es/locale/lang/zh-cn";
 import vi from "element-plus/es/locale/lang/vi";
 // import plusVi from "plus-pro-components/es/locale/lang/vi";
+
+import viLocale from "@fullcalendar/core/locales/vi";
+import enLocale from "@fullcalendar/core/locales/en-gb";
 
 export default defineComponent({
   name: "app",
@@ -28,9 +31,10 @@ export default defineComponent({
   },
   computed: {
     currentLocale() {
+      // Kết hợp chuyển ngữ cho Element Plus và FullCalendar
       return this.$storage.locale?.locale === "zh"
-        ? { ...vi, ...plusZhCn }
-        : { ...en, ...plusEn };
+        ? { ...vi, ...plusZhCn, ...viLocale }
+        : { ...en, ...plusEn, ...enLocale };
     }
   },
   beforeCreate() {
