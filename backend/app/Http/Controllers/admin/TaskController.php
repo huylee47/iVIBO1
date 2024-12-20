@@ -19,7 +19,7 @@ class TaskController extends Controller
     public function indexId(){
         return $this->taskService->indexId();
     }
-    public function create(TaskRequest $request){
+    public function store(TaskRequest $request){
         return $this->taskService->store($request);
     }
 }
