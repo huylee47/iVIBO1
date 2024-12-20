@@ -11,7 +11,7 @@ const dynamicSize = ref();
 const value = ref("");
 const shortcuts = [
   {
-    text: "今天",
+    text: "Hiện tại",
     value: new Date()
   },
   {
@@ -47,7 +47,8 @@ const shortcuts1 = [
     }
   },
   {
-    text: "上个月",
+    // 上个月
+    text: "Tháng trước",
     value: () => {
       const end = new Date();
       const start = new Date();

@@ -5,7 +5,7 @@ export const getPickerShortcuts = (): Array<{
 }> => {
   return [
     {
-      text: "今天",
+      text: "Hiện tại",
       value: () => {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
@@ -15,7 +15,8 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "昨天",
+      //昨天
+      text: "Hôm qua",
       value: () => {
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
@@ -27,7 +28,8 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "前天",
+      // 前天
+      text: "Hôm kia",
       value: () => {
         const beforeYesterday = new Date();
         beforeYesterday.setDate(beforeYesterday.getDate() - 2);
@@ -81,7 +83,8 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "本月",
+      // 本月
+      text: "Tháng này",
       value: () => {
         const today = new Date();
         const startOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -96,7 +99,7 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "上个月",
+      text: "Tháng trước",
       value: () => {
         const today = new Date();
         const startOfLastMonth = new Date(
@@ -115,7 +118,8 @@ export const getPickerShortcuts = (): Array<{
       }
     },
     {
-      text: "本年",
+      // 本年
+      text: "Năm nay",
       value: () => {
         const today = new Date();
         const startOfYear = new Date(today.getFullYear(), 0, 1);

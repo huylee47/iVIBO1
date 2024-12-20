@@ -32,7 +32,7 @@ export const noticesData: TabItem[] = [
         avatar: "https://xiaoxian521.github.io/hyperlink/svg/smile1.svg",
         title: "admin 评论了你",
         description: "诚在于心，信在于行，诚信在于心行合一。",
-        datetime: "今天",
+        datetime: "Hiện tại",
         type: "2"
       },
       {
