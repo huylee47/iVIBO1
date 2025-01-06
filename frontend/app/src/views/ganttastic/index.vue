@@ -6,13 +6,13 @@ import { GGanttChart, GGanttRow } from "@infectoone/vue-ganttastic";
 const context = ref([
   [
     {
-      week: "星期一",
+      week: "Thứ 2",
       beginDate: "06:00",
       endDate: "22:00",
       ganttBarConfig: {
         id: "0",
         hasHandles: true,
-        label: "需求收集和分析  负责人：小张",
+        label: "test 2",
         style: {
           background: "#e96560"
         }
@@ -21,13 +21,13 @@ const context = ref([
   ],
   [
     {
-      week: "星期二",
+      week: "Thứ 3",
       beginDate: "09:00",
       endDate: "18:00",
       ganttBarConfig: {
         id: "1",
         hasHandles: true,
-        label: "系统设计  负责人：小强",
+        label: "test 3",
         style: {
           background: "#5ccfa3"
         }
@@ -36,13 +36,13 @@ const context = ref([
   ],
   [
     {
-      week: "星期三",
+      week: "Thứ 4",
       beginDate: "07:00",
       endDate: "20:00",
       ganttBarConfig: {
         id: "2",
         hasHandles: true,
-        label: "编码实现  负责人：老李",
+        label: "test 4",
         style: {
           background: "#77d6fa"
         }
@@ -51,13 +51,13 @@ const context = ref([
   ],
   [
     {
-      week: "星期四",
+      week: "Thứ 5 ",
       beginDate: "06:00",
       endDate: "21:00",
       ganttBarConfig: {
         id: "3",
         hasHandles: true,
-        label: "编码实现  负责人：小明",
+        label: "test 5",
         style: {
           color: "#fff",
           background: "#1b2a47"
@@ -67,13 +67,13 @@ const context = ref([
   ],
   [
     {
-      week: "星期五",
+      week: "thứ 6 ",
       beginDate: "05:00",
       endDate: "19:00",
       ganttBarConfig: {
         id: "4",
         hasHandles: true,
-        label: "内部测试  负责人：小雪",
+        label: "test 6",
         style: {
           background: "#5ccfa3"
         }
@@ -82,13 +82,13 @@ const context = ref([
   ],
   [
     {
-      week: "星期六",
+      week: "Thứ 7 ",
       beginDate: "10:00",
       endDate: "22:00",
       ganttBarConfig: {
         id: "5",
         hasHandles: true,
-        label: "系统优化和文档整理  负责人：小欣",
+        label: "test 7",
         style: {
           background: "#f8bc45"
         }
@@ -97,14 +97,14 @@ const context = ref([
   ],
   [
     {
-      week: "星期天",
+      week: "Chủ nhật",
       beginDate: "04:00",
       endDate: "23:59",
       ganttBarConfig: {
         id: "6",
         immobile: false,
         hasHandles: false,
-        label: "部署和上线  负责人：老王",
+        label: "test 8",
         style: {
           background: "#f3953d"
         }

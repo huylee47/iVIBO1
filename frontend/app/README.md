@@ -6,7 +6,7 @@
 
 **中文** | [English](./README.en-US.md)
 
-## 简介
+## Giới thiệu
 
 `vue-pure-admin` 是一款开源免费且开箱即用的中后台管理系统模版。完全采用 `ECMAScript` 模块（`ESM`）规范来编写和组织代码，使用了最新的 `Vue3`、
 `Vite`、`Element-Plus`、`TypeScript`、`Pinia`、`Tailwindcss` 等主流技术开发
@@ -17,10 +17,10 @@
 
 ## 精简版本（实际项目开发请用精简版本，提供 `非国际化` 、`国际化` 两个版本选择）
 
-精简版本是基于 [vue-pure-admin](https://github.com/pure-admin/vue-pure-admin) 提炼出的架子，包含主体功能，更适合实际项目开发，打包后的大小在全局引入 [element-plus](https://element-plus.org) 的情况下仍然低于 `2.3MB`，并且会永久同步完整版的代码。开启 `brotli` 压缩和 `cdn` 替换本地库模式后，打包大小低于 `350kb`
+精简版本是基于 [vue-pure-admin](https://ouransoft.vn/vue-pure-admin) 提炼出的架子，包含主体功能，更适合实际项目开发，打包后的大小在全局引入 [element-plus](https://element-plus.org) 的情况下仍然低于 `2.3MB`，并且会永久同步完整版的代码。开启 `brotli` 压缩和 `cdn` 替换本地库模式后，打包大小低于 `350kb`
 
-[点我查看非国际化精简版本](https://github.com/pure-admin/pure-admin-thin)  
-[点我查看国际化精简版本](https://github.com/pure-admin/pure-admin-thin/tree/i18n)
+[点我查看非国际化精简版本](https://ouransoft.vn/pure-admin-thin)  
+[点我查看国际化精简版本](https://ouransoft.vn/pure-admin-thin/tree/i18n)
 
 ## 配套视频
 
@@ -42,15 +42,15 @@
 
 ## `max` 版本
 
-[点我查看 max 版本](https://github.com/pure-admin/vue-pure-admin-max)
+[点我查看 max 版本](https://ouransoft.vn/vue-pure-admin-max)
 
 ## `Tauri` 版本
 
-[点我查看 Tauri 版本](https://github.com/pure-admin/tauri-pure-admin)
+[点我查看 Tauri 版本](https://ouransoft.vn/tauri-pure-admin)
 
 ## `Electron` 版本
 
-[点我查看 Electron 版本](https://github.com/pure-admin/electron-pure-admin)
+[点我查看 Electron 版本](https://ouransoft.vn/electron-pure-admin)
 
 ## 预览
 
@@ -82,7 +82,7 @@
 
 在 `Gitpod`（适用于 `GitHub` 的免费在线开发环境）中打开项目，并立即开始编码.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pure-admin/vue-pure-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://ouransoft.vn/vue-pure-admin)
 
 ## 安装使用
 
@@ -105,12 +105,12 @@ npm install -g @pureadmin/cli
 pure create
 ```
 
-[点我查看 @pureadmin/cli 脚手架详细用法](https://github.com/pure-admin/pure-admin-cli#pureadmincli)
+[点我查看 @pureadmin/cli 脚手架详细用法](https://ouransoft.vn/pure-admin-cli#pureadmincli)
 
 #### 从 `GitHub` 上拉取
 
 ```bash
-git clone https://github.com/pure-admin/vue-pure-admin.git
+git clone https://ouransoft.vn/vue-pure-admin.git
 ```
 
 #### 从 `Gitee` 上拉取
@@ -167,7 +167,7 @@ docker run -dp 8080:80  --name pure-admin vue-pure-admin
 
 ## 如何贡献
 
-非常欢迎您的加入！[提一个 Issue](https://github.com/pure-admin/vue-pure-admin/issues/new/choose) 或者提交一个 `Pull Request`
+非常欢迎您的加入！[提一个 Issue](https://ouransoft.vn/vue-pure-admin/issues/new/choose) 或者提交一个 `Pull Request`
 
 **Pull Request:**
 
@@ -181,18 +181,18 @@ docker run -dp 8080:80  --name pure-admin vue-pure-admin
 
 非常感谢你们能深入了解源码并对 `pure-admin` 组织作出优秀贡献 ❤️
 
-|                   **贡献人**                    |                         **具体代码**                         |
-| :---------------------------------------------: | :----------------------------------------------------------: |
-|       [hb0730](https://github.com/hb0730)       | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=hb0730) |
-|         [o-cc](https://github.com/o-cc)         | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=o-cc) |
-| [yj-liuzepeng](https://github.com/yj-liuzepeng) | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=yj-liuzepeng) |
-|   [skyline523](https://github.com/skyline523)   | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=skyline523) |
-| [shark-lajiao](https://github.com/shark-lajiao) | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=shark-lajiao) |
-|      [WitMiao](https://github.com/WitMiao)      | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=WitMiao) |
-|     [QFifteen](https://github.com/QFifteen)     | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=QFifteen) |
-|      [edgexie](https://github.com/edgexie)      | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=edgexie) |
-|       [way-jm](https://github.com/way-jm)       | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=way-jm) |
-|   [simple-hui](https://github.com/simple-hui)   | [代码](https://github.com/pure-admin/vue-pure-admin/commits?author=simple-hui) |
+|                   **贡献人**                    |                              **具体代码**                               |
+| :---------------------------------------------: | :---------------------------------------------------------------------: |
+|       [hb0730](https://github.com/hb0730)       |    [代码](https://ouransoft.vn/vue-pure-admin/commits?author=hb0730)    |
+|         [o-cc](https://github.com/o-cc)         |     [代码](https://ouransoft.vn/vue-pure-admin/commits?author=o-cc)     |
+| [yj-liuzepeng](https://github.com/yj-liuzepeng) | [代码](https://ouransoft.vn/vue-pure-admin/commits?author=yj-liuzepeng) |
+|   [skyline523](https://github.com/skyline523)   |  [代码](https://ouransoft.vn/vue-pure-admin/commits?author=skyline523)  |
+| [shark-lajiao](https://github.com/shark-lajiao) | [代码](https://ouransoft.vn/vue-pure-admin/commits?author=shark-lajiao) |
+|      [WitMiao](https://github.com/WitMiao)      |   [代码](https://ouransoft.vn/vue-pure-admin/commits?author=WitMiao)    |
+|     [QFifteen](https://github.com/QFifteen)     |   [代码](https://ouransoft.vn/vue-pure-admin/commits?author=QFifteen)   |
+|      [edgexie](https://github.com/edgexie)      |   [代码](https://ouransoft.vn/vue-pure-admin/commits?author=edgexie)    |
+|       [way-jm](https://github.com/way-jm)       |    [代码](https://ouransoft.vn/vue-pure-admin/commits?author=way-jm)    |
+|   [simple-hui](https://github.com/simple-hui)   |  [代码](https://ouransoft.vn/vue-pure-admin/commits?author=simple-hui)  |
 
 ## `Git` 贡献提交规范
 
@@ -236,10 +236,10 @@ docker run -dp 8080:80  --name pure-admin vue-pure-admin
 
 非常感谢留下星星的好心人，感谢您的支持 :heart:
 
-[![Stargazers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://github.com/pure-admin/vue-pure-admin/stargazers)
+[![Stargazers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://ouransoft.vn/vue-pure-admin/stargazers)
 
 ## `Fork`
 
 瞧，那些 `小哥哥` 、`小姐姐` 认真 `学习` 的样子真滴是 `哎呦不错哦` :heart:
 
-[![Forkers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://github.com/pure-admin/vue-pure-admin/network/members)
+[![Forkers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://ouransoft.vn/vue-pure-admin/network/members)

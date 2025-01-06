@@ -1,4 +1,5 @@
 // 模拟后端动态生成路由
+// Mô phỏng phần phụ trợ để tạo tuyến đường động
 import { defineFakeRoute } from "vite-plugin-fake-server/client";
 import { system, monitor, permission, frame, tabs } from "@/router/enums";
 
@@ -8,6 +9,11 @@ import { system, monitor, permission, frame, tabs } from "@/router/enums";
  * common：普通角色
  */
 
+/**
+ * roles: quyền cấp trang, hai loại "quản trị viên" và "chung" được mô phỏng tại đây
+ * admin: vai trò quản trị viên
+ * common: vai trò chung
+ */
 const systemManagementRouter = {
   path: "/system",
   meta: {
@@ -295,6 +301,7 @@ const tabsRouter = {
       }
     },
     // query 传参模式
+    // chế độ truyền tham số truy vấn
     {
       path: "/tabs/query-detail",
       name: "TabQueryDetail",
@@ -306,12 +313,14 @@ const tabsRouter = {
       }
     },
     // params 传参模式
+    //chế độ truyền tham số params
     {
       path: "/tabs/params-detail/:id",
       component: "params-detail",
       name: "TabParamsDetail",
       meta: {
         // 不在menu菜单中显示
+        // Không hiển thị trong menu
         showLink: false,
         activePath: "/tabs/index",
         roles: ["admin", "common"]

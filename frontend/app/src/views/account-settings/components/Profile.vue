@@ -28,7 +28,7 @@ const userInfos = reactive({
 });
 
 const rules = reactive<FormRules<UserInfo>>({
-  nickname: [{ required: true, message: "昵称必填", trigger: "blur" }]
+  nickname: [{ required: true, message: "Tên必填", trigger: "blur" }]
 });
 
 function queryEmail(queryString, callback) {
@@ -75,14 +75,14 @@ const handleSubmitImage = () => {
   formUpload(formData)
     .then(({ success, data }) => {
       if (success) {
-        message("更新头像成功", { type: "success" });
+        message("Tải thành công", { type: "success" });
         handleClose();
       } else {
-        message("更新头像失败");
+        message("Tải thất bại");
       }
     })
     .catch(error => {
-      message(`提交异常 ${error}`, { type: "error" });
+      message(`có lỗi xảy ra ${error}`, { type: "error" });
     });
 };
 
@@ -91,7 +91,8 @@ const onSubmit = async (formEl: FormInstance) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       console.log(userInfos);
-      message("更新信息成功", { type: "success" });
+      // 更新信息成功
+      message("Cập nhật thông tin thành công", { type: "success" });
     } else {
       console.log("error submit!", fields);
     }
@@ -110,14 +111,14 @@ getMine().then(res => {
       deviceDetection() ? 'max-w-[100%]' : 'max-w-[70%]'
     ]"
   >
-    <h3 class="my-8">个人信息</h3>
+    <h3 class="my-8">Thông tin cá nhân</h3>
     <el-form
       ref="userInfoFormRef"
       label-position="top"
       :rules="rules"
       :model="userInfos"
     >
-      <el-form-item label="头像">
+      <el-form-item label="Ảnh đại diện">
         <el-avatar :size="80" :src="userInfos.avatar" />
         <el-upload
           ref="uploadRef"
@@ -130,34 +131,34 @@ getMine().then(res => {
         >
           <el-button plain class="ml-4">
             <IconifyIconOffline :icon="uploadLine" />
-            <span class="ml-2">更新头像</span>
+            <span class="ml-2">Tải ảnh lên</span>
           </el-button>
         </el-upload>
       </el-form-item>
-      <el-form-item label="昵称" prop="nickname">
-        <el-input v-model="userInfos.nickname" placeholder="请输入昵称" />
+      <el-form-item label="Tên" prop="nickname">
+        <el-input v-model="userInfos.nickname" placeholder="请输入Tên" />
       </el-form-item>
-      <el-form-item label="邮箱" prop="email">
+      <el-form-item label="E-mail" prop="email">
         <el-autocomplete
           v-model="userInfos.email"
           :fetch-suggestions="queryEmail"
           :trigger-on-focus="false"
-          placeholder="请输入邮箱"
+          placeholder="请输入E-mail"
           clearable
           class="w-full"
         />
       </el-form-item>
-      <el-form-item label="联系电话">
+      <el-form-item label="Số điện thoại">
         <el-input
           v-model="userInfos.phone"
-          placeholder="请输入联系电话"
+          placeholder="请输入Số điện thoại"
           clearable
         />
       </el-form-item>
-      <el-form-item label="简介">
+      <el-form-item label="Giới thiệu">
         <el-input
           v-model="userInfos.description"
-          placeholder="请输入简介"
+          placeholder="请输入Giới thiệu"
           type="textarea"
           :autosize="{ minRows: 6, maxRows: 8 }"
           maxlength="56"
@@ -165,13 +166,14 @@ getMine().then(res => {
         />
       </el-form-item>
       <el-button type="primary" @click="onSubmit(userInfoFormRef)">
-        更新信息
+        <!-- 更新信息 -->
+        Cập nhật thông tin
       </el-button>
     </el-form>
     <el-dialog
       v-model="isShow"
       width="40%"
-      title="编辑头像"
+      title="Ảnh đại diện"
       destroy-on-close
       :closeOnClickModal="false"
       :before-close="handleClose"
@@ -180,9 +182,9 @@ getMine().then(res => {
       <ReCropperPreview ref="cropRef" :imgSrc="imgSrc" @cropper="onCropper" />
       <template #footer>
         <div class="dialog-footer">
-          <el-button bg text @click="handleClose">取消</el-button>
+          <el-button bg text @click="handleClose">Huỷ</el-button>
           <el-button bg text type="primary" @click="handleSubmitImage">
-            确定
+            Xác nhận
           </el-button>
         </div>
       </template>

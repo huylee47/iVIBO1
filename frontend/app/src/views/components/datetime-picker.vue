@@ -38,7 +38,7 @@ const datetimeFormat = ref("");
 const value2 = ref("");
 const shortcuts1 = [
   {
-    text: "上周",
+    text: "Tuần trước",
     value: () => {
       const end = new Date();
       const start = new Date();
@@ -179,7 +179,7 @@ watch(size, val =>
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/datetime-picker.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/datetime-picker.vue"
         target="_blank"
       >
         代码位置 src/views/components/datetime-picker.vue

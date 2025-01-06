@@ -34,5 +34,5 @@ body:
       options:
         - label: 是否仔细阅读过 [文档](https://pure-admin.github.io/pure-admin-doc/) (Have you read [documentation](https://pure-admin.github.io/pure-admin-doc/) carefully)
           required: true
-        - label: 检查是否存在相同或类似的问题 [issues](https://github.com/pure-admin/vue-pure-admin/issues) (Check for the same or similar [issues](https://github.com/pure-admin/vue-pure-admin/issues))
+        - label: 检查是否存在相同或类似的问题 [issues](https://ouransoft.vn/vue-pure-admin/issues) (Check for the same or similar [issues](https://ouransoft.vn/vue-pure-admin/issues))
           required: true

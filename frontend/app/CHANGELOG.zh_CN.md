@@ -292,7 +292,7 @@
 
 ### 🎫 Feat
 
-- 路由 `meta` 添加 `activePath` 属性，可将某个菜单激活（主要用于通过 `query` 或 `params` 传参的路由，当它们通过配置 `showLink: false` 后不在菜单中显示，就不会有任何菜单高亮，而通过设置 `activePath` 指定激活菜单即可获得高亮，`activePath` 为指定激活菜单的 `path` [查看详情](https://github.com/pure-admin/vue-pure-admin/commit/58cafbc73ffa27253446ee93077e1e382519ce8a#commitcomment-117834411)）
+- 路由 `meta` 添加 `activePath` 属性，可将某个菜单激活（主要用于通过 `query` 或 `params` 传参的路由，当它们通过配置 `showLink: false` 后不在菜单中显示，就不会有任何菜单高亮，而通过设置 `activePath` 指定激活菜单即可获得高亮，`activePath` 为指定激活菜单的 `path` [查看详情](https://ouransoft.vn/vue-pure-admin/commit/58cafbc73ffa27253446ee93077e1e382519ce8a#commitcomment-117834411)）
 - `pure-admin-table` 高级用法添加自适应内容区高度示例
 - 添加防抖、节流和文本复制指令并规范自定义指令用法错误时的提示以及添加使用示例
 - `notice` 消息提示组件空数据时添加 `el-empty` 组件
@@ -306,7 +306,7 @@
 
 ### 🍏 Perf
 
-- 页面切换性能优化，不考虑网络的情况下，页面切换逻辑的速度差不多比之前快 `3-4` 倍 [查看优化详情](https://github.com/pure-admin/vue-pure-admin/pull/600#issuecomment-1586094078)
+- 页面切换性能优化，不考虑网络的情况下，页面切换逻辑的速度差不多比之前快 `3-4` 倍 [查看优化详情](https://ouransoft.vn/vue-pure-admin/pull/600#issuecomment-1586094078)
 - 优化标签页操作-路由传参模式用法
 - 系统管理中表格均改为自适应内容区高度，需将 `@pureadmin/table` 升级到最新版
 - 使用 `vueuse` 的 `useResizeObserver` 函数替换 `v-resize` 自定义指令，从测试后的表现来看性能会更好
@@ -377,7 +377,7 @@
 
 # 4.0.0 (2023-05-09)
 
-[查看 4.0.0 版本优化细节](https://github.com/pure-admin/vue-pure-admin/issues/428#issuecomment-1422191158)
+[查看 4.0.0 版本优化细节](https://ouransoft.vn/vue-pure-admin/issues/428#issuecomment-1422191158)
 
 ### ✔️ Refactor
 
@@ -444,8 +444,8 @@
 
 ### 🍏 Perf
 
-- 更新 [@pureadmin/theme](https://github.com/pure-admin/pure-admin-theme) 至最新版，带来更友好的类型提示
-- 优化 [PureTableBar](https://github.com/pure-admin/vue-pure-admin/tree/main/src/components/RePureTableBar) 组件
+- 更新 [@pureadmin/theme](https://ouransoft.vn/pure-admin-theme) 至最新版，带来更友好的类型提示
+- 优化 [PureTableBar](https://ouransoft.vn/vue-pure-admin/tree/main/src/components/RePureTableBar) 组件
 - 优化系统管理页面业务代码，带来更好的代码参考
 
 # 3.9.5 (2022-12-13)
@@ -500,7 +500,7 @@
 
 ### 🍏 Perf
 
-- 全局覆盖 `element-plus` 的 `el-dialog`、`el-drawer`、`el-message-box`、`el-notification` 组件右上角关闭图标的样式，使其表现更鲜明 [具体代码修改记录](https://github.com/pure-admin/vue-pure-admin/commit/c80818d792276666aaea4b18413a0f08777f2ed1)
+- 全局覆盖 `element-plus` 的 `el-dialog`、`el-drawer`、`el-message-box`、`el-notification` 组件右上角关闭图标的样式，使其表现更鲜明 [具体代码修改记录](https://ouransoft.vn/vue-pure-admin/commit/c80818d792276666aaea4b18413a0f08777f2ed1)
 - 打包输出信息兼容不同打包输出路径
 - 优化一些动画
 
@@ -548,7 +548,7 @@
 
 ### 🍏 Perf
 
-- 大优化，移除 `@pureadmin/components` 并采用兼容写法，平台打包大小在未启用压缩前对比优化前减少 `0.4` MB , 首屏请求减少 `2.3` MB 的资源，这对于 [精简版](https://github.com/pure-admin/pure-admin-thin) 来说是非常大的优化，精简版已经同步代码
+- 大优化，移除 `@pureadmin/components` 并采用兼容写法，平台打包大小在未启用压缩前对比优化前减少 `0.4` MB , 首屏请求减少 `2.3` MB 的资源，这对于 [精简版](https://ouransoft.vn/pure-admin-thin) 来说是非常大的优化，精简版已经同步代码
 
 # 3.8.0 (2022-11-26)
 
@@ -586,7 +586,7 @@
 ### 🎫 Feat
 
 - 添加前端单点登录，测试地址 https://pure-admin.github.io/vue-pure-admin/#/pure-table/index?username=sso&roles=admin&accessToken=eyJhbGciOiJIUzUxMiJ9.admin
-- 为 [@pureadmin/table](https://github.com/pure-admin/pure-admin-table) 添加更多的示例和 `element-plus` 的 [table](https://element-plus.org/zh-CN/component/table.html) 示例保持一致
+- 为 [@pureadmin/table](https://ouransoft.vn/pure-admin-table) 添加更多的示例和 `element-plus` 的 [table](https://element-plus.org/zh-CN/component/table.html) 示例保持一致
 - 丰富水印功能页面（支持自定义各种颜色、阴影、文字、额外属性、设置不可删除水印以及给指定元素设置水印）
 - 优化菜单，添加 `MenuArrowIconNoTransition` 全局配置，在 `public/platform-config.json` 中配置即可，对于出现左侧菜单模式，菜单展开卡顿的可设置 `MenuArrowIconNoTransition: true` 即可解决
 - 更换表单设计器组件演示
@@ -722,8 +722,8 @@
 
 ### 🎫 Feat
 
-- 将 `element-plus` 的 `Table` 二次封装到[@pureadmin/table](https://github.com/pure-admin/pure-admin-table)，提供灵活的配置项并集成到平台里
-- 将 `element-plus` 的 `Descriptions` 二次封装到[@pureadmin/descriptions](https://github.com/pure-admin/pure-admin-descriptions)，提供灵活的配置项并集成到平台里
+- 将 `element-plus` 的 `Table` 二次封装到[@pureadmin/table](https://ouransoft.vn/pure-admin-table)，提供灵活的配置项并集成到平台里
+- 将 `element-plus` 的 `Descriptions` 二次封装到[@pureadmin/descriptions](https://ouransoft.vn/pure-admin-descriptions)，提供灵活的配置项并集成到平台里
 - 将平台的大部分工具以及 `hooks` 都集中到[@pureadmin/utils](https://pure-admin-utils.netlify.app)，并删除集中到这个库里的代码，减少平台体积
 - 添加[unplugin-vue-define-options](https://www.npmjs.com/package/unplugin-vue-define-options)插件，页面可直接写 `defineOptions({name: 自定义名称})`
 - 添加项目文件、语言分析工具 [cloc](https://www.npmjs.com/package/cloc)
@@ -768,7 +768,7 @@
 - 集成`Swiper`插件
 - 路由支持传`component`，代表组件路径
 - 添加预发布打包模式
-- 添加关闭某个标签的[hooks](https://github.com/pure-admin/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
+- 添加关闭某个标签的[hooks](https://ouransoft.vn/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
 
 ### ✔️ Refactor
 
@@ -780,7 +780,7 @@
 - 优化平台的`split-pane`组件样式
 - 优化国际化，路由不再传`i18n`字段，平台自动读取根目录`locales`文件夹下文件进行国际化匹配
 - 优化图标选择器
-- 优化`layout`显示用户信息[commit](https://github.com/pure-admin/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
+- 优化`layout`显示用户信息[commit](https://ouransoft.vn/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
 
 ### 🐞 Bug fixes
 

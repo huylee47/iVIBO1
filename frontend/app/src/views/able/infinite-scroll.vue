@@ -45,7 +45,7 @@ const load = () => {
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/able/infinite-scroll.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/able/infinite-scroll.vue"
         target="_blank"
       >
         代码位置 src/views/able/infinite-scroll.vue
@@ -59,7 +59,7 @@ const load = () => {
       :data="data"
       :infinite-scroll-disabled="isBottom"
     >
-      <el-table-column width="80" type="index" label="序号" />
+      <el-table-column width="80" type="index" label="ID" />
       <el-table-column prop="date" label="日期" />
       <el-table-column prop="name" label="名称" />
       <el-table-column prop="age" label="年龄" />

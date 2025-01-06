@@ -12,12 +12,12 @@ export function useColumns() {
   const columns: TableColumnList = [
     {
       sortable: true,
-      label: "序号",
+      label: "ID",
       prop: "id"
     },
     {
       sortable: true,
-      label: "需求人数",
+      label: "Nhân sự",
       prop: "requiredNumber",
       filterMultiple: false,
       filterClassName: "pure-table-filter",
@@ -33,17 +33,17 @@ export function useColumns() {
     },
     {
       sortable: true,
-      label: "提问数量",
+      label: "Phản hồi",
       prop: "questionNumber"
     },
     {
       sortable: true,
-      label: "解决数量",
+      label: "Hoàn thành",
       prop: "resolveNumber"
     },
     {
       sortable: true,
-      label: "用户满意度",
+      label: "Đánh giá người dùng",
       minWidth: 100,
       prop: "satisfaction",
       cellRenderer: ({ row }) => (
@@ -60,11 +60,11 @@ export function useColumns() {
     },
     {
       sortable: true,
-      label: "统计日期",
+      label: "Ngày thống kê",
       prop: "date"
     },
     {
-      label: "操作",
+      label: "Vận hành",
       fixed: "right",
       slot: "operation"
     }

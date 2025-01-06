@@ -26,7 +26,7 @@ export const formRules = reactive(<FormRules>{
         if (value === "") {
           callback();
         } else if (!isEmail(value)) {
-          callback(new Error("请输入正确的邮箱格式"));
+          callback(new Error("请输入正确的E-mail格式"));
         } else {
           callback();
         }

@@ -24,8 +24,8 @@ const list = ref([
     button: "修改"
   },
   {
-    title: "备用邮箱",
-    illustrate: "已绑定邮箱：pure***@163.com",
+    title: "备用E-mail",
+    illustrate: "已绑定E-mail：pure***@163.com",
     button: "修改"
   }
 ]);
@@ -43,7 +43,7 @@ function onClick(item) {
       deviceDetection() ? 'max-w-[100%]' : 'max-w-[70%]'
     ]"
   >
-    <h3 class="my-8">账户管理</h3>
+    <h3 class="my-8">Quản lý tài khoản</h3>
     <div v-for="(item, index) in list" :key="index">
       <div class="flex items-center">
         <div class="flex-1">

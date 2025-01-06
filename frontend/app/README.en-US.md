@@ -16,10 +16,10 @@ Seek innovation in stability and see the future in technology
 
 ## Thin version (offering non-internationalized and internationalized versions)
 
-The simplified version is based on the shelf extracted from [vue-pure-admin](https://github.com/pure-admin/vue-pure-admin), which contains main functions and is more suitable for actual project development. The packaged size is introduced globally [element-plus](https://element-plus.org) is still below `2.3MB`, and the full version of the code will be permanently synchronized. After enabling `brotli` compression and `cdn` to replace the local library mode, the package size is less than `350kb`
+The simplified version is based on the shelf extracted from [vue-pure-admin](https://ouransoft.vn/vue-pure-admin), which contains main functions and is more suitable for actual project development. The packaged size is introduced globally [element-plus](https://element-plus.org) is still below `2.3MB`, and the full version of the code will be permanently synchronized. After enabling `brotli` compression and `cdn` to replace the local library mode, the package size is less than `350kb`
 
-[Click to view the non-internationalized version](https://github.com/pure-admin/pure-admin-thin)  
-[Click to view Internationalization version](https://github.com/pure-admin/pure-admin-thin/tree/i18n)
+[Click to view the non-internationalized version](https://ouransoft.vn/pure-admin-thin)  
+[Click to view Internationalization version](https://ouransoft.vn/pure-admin-thin/tree/i18n)
 
 ## Supporting video
 
@@ -41,15 +41,15 @@ The simplified version is based on the shelf extracted from [vue-pure-admin](htt
 
 ## `max` version
 
-[Click me to view the max version](https://github.com/pure-admin/vue-pure-admin-max)
+[Click me to view the max version](https://ouransoft.vn/vue-pure-admin-max)
 
 ## Tauri
 
-[Click Watch Tauri](https://github.com/pure-admin/tauri-pure-admin)
+[Click Watch Tauri](https://ouransoft.vn/tauri-pure-admin)
 
 ## Electron
 
-[Click Watch Electron](https://github.com/pure-admin/electron-pure-admin)
+[Click Watch Electron](https://ouransoft.vn/electron-pure-admin)
 
 ## Preview
 
@@ -81,7 +81,7 @@ The simplified version is based on the shelf extracted from [vue-pure-admin](htt
 
 Open the project in Gitpod (free online dev environment for GitHub) and start coding immediately.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pure-admin/vue-pure-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://ouransoft.vn/vue-pure-admin)
 
 ## Install And Use
 
@@ -104,12 +104,12 @@ npm install -g @pureadmin/cli
 pure create
 ```
 
-[Click to view the detailed usage of @pureadmin/cli scaffolding](https://github.com/pure-admin/pure-admin-cli#pureadmincli)
+[Click to view the detailed usage of @pureadmin/cli scaffolding](https://ouransoft.vn/pure-admin-cli#pureadmincli)
 
 #### Pull from `GitHub`
 
 ```bash
-git clone https://github.com/pure-admin/vue-pure-admin.git
+git clone https://ouransoft.vn/vue-pure-admin.git
 ```
 
 #### Pulled from `Gitee`
@@ -166,7 +166,7 @@ Of course, you can also operate the `docker` project through the [Docker Desktop
 
 ## How to contribute
 
-You are very welcome to join！[Raise an issue](https://github.com/pure-admin/vue-pure-admin/issues/new/choose) Or submit a Pull Request
+You are very welcome to join！[Raise an issue](https://ouransoft.vn/vue-pure-admin/issues/new/choose) Or submit a Pull Request
 
 **Pull Request:**
 
@@ -180,18 +180,18 @@ You are very welcome to join！[Raise an issue](https://github.com/pure-admin/vu
 
 Thank you very much for your in-depth understanding of the source code and your outstanding contributions to the `pure-admin` organization ❤️
 
-|                 **Contributor**                 |                       **SpecificCode**                       |
-| :---------------------------------------------: | :----------------------------------------------------------: |
-|       [hb0730](https://github.com/hb0730)       | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=hb0730) |
-|         [o-cc](https://github.com/o-cc)         | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=o-cc) |
-| [yj-liuzepeng](https://github.com/yj-liuzepeng) | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=yj-liuzepeng) |
-|   [skyline523](https://github.com/skyline523)   | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=skyline523) |
-| [shark-lajiao](https://github.com/shark-lajiao) | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=shark-lajiao) |
-|      [WitMiao](https://github.com/WitMiao)      | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=WitMiao) |
-|     [QFifteen](https://github.com/QFifteen)     | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=QFifteen) |
-|      [edgexie](https://github.com/edgexie)      | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=edgexie) |
-|       [way-jm](https://github.com/way-jm)       | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=way-jm) |
-|   [simple-hui](https://github.com/simple-hui)   | [code](https://github.com/pure-admin/vue-pure-admin/commits?author=simple-hui) |
+|                 **Contributor**                 |                            **SpecificCode**                             |
+| :---------------------------------------------: | :---------------------------------------------------------------------: |
+|       [hb0730](https://github.com/hb0730)       |    [code](https://ouransoft.vn/vue-pure-admin/commits?author=hb0730)    |
+|         [o-cc](https://github.com/o-cc)         |     [code](https://ouransoft.vn/vue-pure-admin/commits?author=o-cc)     |
+| [yj-liuzepeng](https://github.com/yj-liuzepeng) | [code](https://ouransoft.vn/vue-pure-admin/commits?author=yj-liuzepeng) |
+|   [skyline523](https://github.com/skyline523)   |  [code](https://ouransoft.vn/vue-pure-admin/commits?author=skyline523)  |
+| [shark-lajiao](https://github.com/shark-lajiao) | [code](https://ouransoft.vn/vue-pure-admin/commits?author=shark-lajiao) |
+|      [WitMiao](https://github.com/WitMiao)      |   [code](https://ouransoft.vn/vue-pure-admin/commits?author=WitMiao)    |
+|     [QFifteen](https://github.com/QFifteen)     |   [code](https://ouransoft.vn/vue-pure-admin/commits?author=QFifteen)   |
+|      [edgexie](https://github.com/edgexie)      |   [code](https://ouransoft.vn/vue-pure-admin/commits?author=edgexie)    |
+|       [way-jm](https://github.com/way-jm)       |    [code](https://ouransoft.vn/vue-pure-admin/commits?author=way-jm)    |
+|   [simple-hui](https://github.com/simple-hui)   |  [code](https://ouransoft.vn/vue-pure-admin/commits?author=simple-hui)  |
 
 ## Git Contribution submission specification
 
@@ -229,16 +229,16 @@ For more detailed browser compatibility support, please see [Which browsers does
 
 Completely free and open source
 
-[MIT © 2020-present, pure-admin](./LICENSE)
+[MIT © 2019-present, pure-admin](./LICENSE)
 
 ## `Star`
 
 Many thanks to the kind individuals who leave a star. Your support is much appreciated :heart:
 
-[![Stargazers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://github.com/pure-admin/vue-pure-admin/stargazers)
+[![Stargazers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://ouransoft.vn/vue-pure-admin/stargazers)
 
 ## `Fork`
 
 It's so cool that you study hard :heart:
 
-[![Forkers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://github.com/pure-admin/vue-pure-admin/network/members)
+[![Forkers repo roster for @pure-admin/vue-pure-admin](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?user=pure-admin&repo=vue-pure-admin)](https://ouransoft.vn/vue-pure-admin/network/members)

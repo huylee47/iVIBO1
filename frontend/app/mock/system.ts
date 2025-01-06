@@ -3,6 +3,7 @@ import { faker } from "@faker-js/faker/locale/zh_CN";
 
 export default defineFakeRoute([
   // 用户管理
+  //Quản lý người dùng
   {
     url: "/user",
     method: "post",
@@ -11,7 +12,7 @@ export default defineFakeRoute([
         {
           avatar: "https://avatars.githubusercontent.com/u/44761321",
           username: "admin",
-          nickname: "小铭",
+          nickname: "admin",
           phone: "15888886789",
           email: faker.internet.email(),
           sex: 0,
@@ -19,8 +20,10 @@ export default defineFakeRoute([
           status: 1,
           dept: {
             // 部门id
+            // id bộ phận
             id: 103,
             // 部门名称
+            // Tên khoa
             name: "研发部门"
           },
           remark: "管理员",

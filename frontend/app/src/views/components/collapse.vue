@@ -43,7 +43,7 @@ const handleChange = (val: string[]) => {
       </div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/collapse.vue"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/collapse.vue"
         target="_blank"
       >
         代码位置 src/views/components/collapse.vue
@@ -65,28 +65,28 @@ const handleChange = (val: string[]) => {
       :accordion="radio === 'accordion' ? true : false"
       @change="handleChange"
     >
-      <el-collapse-item title="周一" name="1">
-        周一启航，新的篇章
+      <el-collapse-item title="Thứ 2" name="1">
+        Thứ 2启航，新的篇章
       </el-collapse-item>
-      <el-collapse-item title="周二" name="2">
-        周二律动，携手共进
+      <el-collapse-item title="Thứ 3" name="2">
+        Thứ 3律动，携手共进
       </el-collapse-item>
-      <el-collapse-item title="周三" name="3">
-        周三昂扬，激情不减
+      <el-collapse-item title="Thứ 4" name="3">
+        Thứ 4昂扬，激情不减
       </el-collapse-item>
-      <el-collapse-item title="周四" name="4">
-        周四精进，事半功倍
+      <el-collapse-item title="Thứ 5" name="4">
+        Thứ 5精进，事半功倍
       </el-collapse-item>
       <el-collapse-item name="5">
         <template #title>
-          周五
+          Thứ 6
           <IconifyIconOnline
             icon="streamline-emojis:beaming-face-with-smiling-eyes"
             class="ml-1"
             width="30"
           />
         </template>
-        周五喜悦，收尾归档
+        Thứ 6喜悦，收尾归档
       </el-collapse-item>
     </el-collapse>
   </el-card>

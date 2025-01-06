@@ -18,7 +18,7 @@ import LoginUpdate from "./components/LoginUpdate.vue";
 import LoginQrCode from "./components/LoginQrCode.vue";
 import { useUserStoreHook } from "@/store/modules/user";
 import { initRouter, getTopMenu } from "@/router/utils";
-import { bg, avatar, illustration } from "./utils/static";
+import { bg, avatar, avatarW, illustration } from "./utils/static";
 import { ReImageVerify } from "@/components/ReImageVerify";
 import { ref, toRaw, reactive, watch, computed } from "vue";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
@@ -57,21 +57,58 @@ const { title, getDropdownItemStyle, getDropdownItemClass } = useNav();
 const { locale, translationCh, translationEn } = useTranslationLang();
 
 const ruleForm = reactive({
-  username: "admin",
-  password: "admin123",
+  username: "",
+  password: "",
   verifyCode: ""
 });
 
+// const onLogin = async (formEl: FormInstance | undefined) => {
+//   if (!formEl) return;
+//   await formEl.validate(valid => {
+//     if (valid) {
+//       loading.value = true;
+//       useUserStoreHook()
+//         .loginByUsername({
+//           username: ruleForm.username,
+//           password: ruleForm.password
+//         })
+//         .then(res => {
+//           if (res.success) {
+//             // 获取后端路由
+//             return initRouter().then(() => {
+//               disabled.value = true;
+//               router
+//                 .push(getTopMenu(true).path)
+//                 .then(() => {
+//                   message(t("login.pureLoginSuccess"), { type: "success" });
+//                 })
+//                 .finally(() => (disabled.value = false));
+//             });
+//           } else {
+//             message(t("login.pureLoginFail"), { type: "error" });
+//           }
+//         })
+//         .finally(() => (loading.value = false));
+//     }
+//   });
+// };
 const onLogin = async (formEl: FormInstance | undefined) => {
   if (!formEl) return;
+
   await formEl.validate(valid => {
     if (valid) {
       loading.value = true;
+
       useUserStoreHook()
-        .loginByUsername({ username: ruleForm.username, password: "admin123" })
+        .loginByUsername({
+          username: ruleForm.username,
+          password: ruleForm.password
+        })
         .then(res => {
           if (res.success) {
-            // 获取后端路由
+            console.log("JSON từ backend:", res);
+            const token = res.data.token;
+            localStorage.setItem("token", token);
             return initRouter().then(() => {
               disabled.value = true;
               router
@@ -79,13 +116,23 @@ const onLogin = async (formEl: FormInstance | undefined) => {
                 .then(() => {
                   message(t("login.pureLoginSuccess"), { type: "success" });
                 })
-                .finally(() => (disabled.value = false));
+                .finally(() => {
+                  disabled.value = false;
+                });
             });
           } else {
-            message(t("login.pureLoginFail"), { type: "error" });
+            const errorMessage = res.message || t("login.pureLoginFail");
+            message(errorMessage, { type: "error" });
+            console.log("Thông báo lỗi:", errorMessage);
           }
         })
-        .finally(() => (loading.value = false));
+        .catch(error => {
+          console.error("Lỗi không mong muốn:", error);
+          message(t("login.pureLoginFail"), { type: "error" });
+        })
+        .finally(() => {
+          loading.value = false;
+        });
     }
   });
 };
@@ -145,7 +192,7 @@ watch(loginDay, value => {
                 class="check-zh"
                 :icon="Check"
               />
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
@@ -167,7 +214,9 @@ watch(loginDay, value => {
       </div>
       <div class="login-box">
         <div class="login-form">
-          <avatar class="avatar" />
+          <!-- <avatar class="avatar" /> -->
+          <avatar v-if="!dataTheme" class="avatar" />
+          <avatarW v-else class="avatar" />
           <Motion>
             <h2 class="outline-none">
               <TypeIt
@@ -333,12 +382,8 @@ watch(loginDay, value => {
     <div
       class="w-full flex-c absolute bottom-3 text-sm text-[rgba(0,0,0,0.6)] dark:text-[rgba(220,220,242,0.8)]"
     >
-      Copyright © 2020-present
-      <a
-        class="hover:text-primary"
-        href="https://github.com/pure-admin"
-        target="_blank"
-      >
+      Copyright © 2019-present
+      <a class="hover:text-primary" href="https://ouransoft.vn" target="_blank">
         &nbsp;{{ title }}
       </a>
     </div>

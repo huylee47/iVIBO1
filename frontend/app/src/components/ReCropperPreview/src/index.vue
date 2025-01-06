@@ -50,7 +50,8 @@ defineExpose({ hidePopover });
             @readied="showPopover = true"
           />
           <p v-show="showPopover" class="mt-1 text-center">
-            温馨提示：右键上方裁剪区可开启功能菜单
+            <!-- 温馨提示：右键上方裁剪区可开启功能菜单 -->
+            Nhấp chuột phải vào vùng cắt ảnh bên trên để mở menu chức năng
           </p>
         </div>
       </template>
@@ -63,11 +64,13 @@ defineExpose({ hidePopover });
         />
         <div v-if="infos" class="mt-1">
           <p>
-            图像大小：{{ parseInt(infos.width) }} ×
-            {{ parseInt(infos.height) }}像素
+            <!-- 图像大小 -->
+            Kích thước ảnh :{{ parseInt(infos.width) }} ×
+            {{ parseInt(infos.height) }} Pixel
           </p>
           <p>
-            文件大小：{{ formatBytes(infos.size) }}（{{ infos.size }} 字节）
+            Dung lượng ảnh :{{ formatBytes(infos.size) }}（{{ infos.size }}
+            byte）
           </p>
         </div>
       </div>

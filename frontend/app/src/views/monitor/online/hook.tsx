@@ -18,7 +18,7 @@ export function useRole() {
   });
   const columns: TableColumnList = [
     {
-      label: "序号",
+      label: "ID",
       prop: "id",
       minWidth: 60
     },

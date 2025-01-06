@@ -36,25 +36,25 @@ const userInfo = ref({
 const panes = [
   {
     key: "profile",
-    label: "个人信息",
+    label: "Thông tin cá nhân",
     icon: ProfileIcon,
     component: Profile
   },
   {
     key: "preferences",
-    label: "偏好设置",
+    label: "Tuỳ chọn",
     icon: PreferencesIcon,
     component: Preferences
   },
   {
     key: "securityLog",
-    label: "安全日志",
+    label: "Nhật ký ",
     icon: SecurityLogIcon,
     component: SecurityLog
   },
   {
     key: "accountManagement",
-    label: "账户管理",
+    label: "Quản lý tài khoản",
     icon: AccountManagementIcon,
     component: AccountManagement
   }
@@ -80,7 +80,7 @@ getMine().then(res => {
         >
           <div class="flex items-center">
             <IconifyIconOffline :icon="leftLine" />
-            <span class="ml-2">返回</span>
+            <span class="ml-2">Quay lại</span>
           </div>
         </el-menu-item>
         <div class="flex items-center ml-8 mt-4 mb-4">

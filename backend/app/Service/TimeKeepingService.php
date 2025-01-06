@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
 Class TimeKeepingService{
-    private $officeLatitude = 20.838185590254955;
-    private $officeLongitude = 106.71405281225722;
-    private $allowedDistance = 50; 
+    public $officeLatitude = 20.838185590254955;
+    public $officeLongitude = 106.71405281225722;
+    public $allowedDistance = 50;
 
     public function checkIn(Request $request)
     {

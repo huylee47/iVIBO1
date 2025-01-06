@@ -292,7 +292,7 @@ Totally `ESM` version
 
 ### 🎫 Feat
 
-- Route `meta` adds `activePath` attribute, which can activate a menu (mainly used for routes that pass parameters through `query` or `params`, when they are not displayed in the menu after configuring `showLink: false`, they will be There will be no menu highlighting, but you can get highlighting by setting `activePath` to specify the active menu, `activePath` is the `path` of the specified active menu [View details](https://github.com/pure-admin/vue-pure-admin/commit/58cafbc73ffa27253446ee93077e1e382519ce8a#commitcomment-117834411))
+- Route `meta` adds `activePath` attribute, which can activate a menu (mainly used for routes that pass parameters through `query` or `params`, when they are not displayed in the menu after configuring `showLink: false`, they will be There will be no menu highlighting, but you can get highlighting by setting `activePath` to specify the active menu, `activePath` is the `path` of the specified active menu [View details](https://ouransoft.vn/vue-pure-admin/commit/58cafbc73ffa27253446ee93077e1e382519ce8a#commitcomment-117834411))
 - Example of advanced usage of `pure-admin-table` to add adaptive content area height
 - Add anti-shake, throttling and text copy instructions and standardize the prompts when custom instructions are used incorrectly and add usage examples
 - Add `el-empty` component when the `notice` message prompts the component to have empty data
@@ -306,7 +306,7 @@ Totally `ESM` version
 
 ### 🍏 Perf
 
-- Page switching performance optimization, regardless of the network, the speed of page switching logic is almost `3-4` times faster than before [View optimization details](https://github.com/pure-admin/vue-pure-admin/pull/600#issuecomment-1586094078)
+- Page switching performance optimization, regardless of the network, the speed of page switching logic is almost `3-4` times faster than before [View optimization details](https://ouransoft.vn/vue-pure-admin/pull/600#issuecomment-1586094078)
 - Optimized tab page operation-routing parameter transfer mode usage
 - All tables in the system management are changed to adaptive content area height, need to upgrade `@pureadmin/table` to the latest version
 - Use the `useResizeObserver` function of `vueuse` to replace the `v-resize` custom directive, and the performance will be better from the performance after testing
@@ -378,7 +378,7 @@ Totally `ESM` version
 
 # 4.0.0 (2023-05-09)
 
-[View 4.0.0 version optimization details](https://github.com/pure-admin/vue-pure-admin/issues/428#issuecomment-1422191158)
+[View 4.0.0 version optimization details](https://ouransoft.vn/vue-pure-admin/issues/428#issuecomment-1422191158)
 
 ### ✔️ Refactor
 
@@ -445,8 +445,8 @@ Totally `ESM` version
 
 ### 🍏 Perf
 
-- Update [@pureadmin/theme](https://github.com/pure-admin/pure-admin-theme) to the latest version, bringing more friendly type hints
-- Optimize [PureTableBar](https://github.com/pure-admin/vue-pure-admin/tree/main/src/components/RePureTableBar) component
+- Update [@pureadmin/theme](https://ouransoft.vn/pure-admin-theme) to the latest version, bringing more friendly type hints
+- Optimize [PureTableBar](https://ouransoft.vn/vue-pure-admin/tree/main/src/components/RePureTableBar) component
 - Optimize the business code of the system management page to bring better code reference
 
 # 3.9.5 (2022-12-13)
@@ -501,7 +501,7 @@ Totally `ESM` version
 
 ### 🍏 Perf
 
-- Global coverage of `el-dialog`, `el-drawer`, `el-message-box`, `el-notification` components of `element-plus`The style of the close icon in the upper right corner makes it more vivid [specific modification Code record](https://github.com/pure-admin/vue-pure-admin/commit/c80818d792276666aaea4b18413a0f08777f2ed1)
+- Global coverage of `el-dialog`, `el-drawer`, `el-message-box`, `el-notification` components of `element-plus`The style of the close icon in the upper right corner makes it more vivid [specific modification Code record](https://ouransoft.vn/vue-pure-admin/commit/c80818d792276666aaea4b18413a0f08777f2ed1)
 - The packaging output information is compatible with different packaging output paths
 - Optimize some animations
 
@@ -549,7 +549,7 @@ Totally `ESM` version
 
 ### 🍏 Perf
 
-- Great optimization, remove `@pureadmin/components` and use compatible writing, the package size of the platform is reduced by `0.4` MB before compression is not enabled, and the resource of `2.3` MB is reduced for the first screen request, which is for the [lite version ](https://github.com/pure-admin/pure-admin-thin) is a very big optimization, the streamlined version has synchronized code
+- Great optimization, remove `@pureadmin/components` and use compatible writing, the package size of the platform is reduced by `0.4` MB before compression is not enabled, and the resource of `2.3` MB is reduced for the first screen request, which is for the [lite version ](https://ouransoft.vn/pure-admin-thin) is a very big optimization, the streamlined version has synchronized code
 
 # 3.8.0 (2022-11-26)
 
@@ -587,7 +587,7 @@ Totally `ESM` version
 ### 🎫 Feat
 
 - Add front-end single sign-on, test address https://pure-admin.github.io/vue-pure-admin/#/pure-table/index?username=sso&roles=admin&accessToken=eyJhbGciOiJIUzUxMiJ9.admin
-- Add more examples for [@pureadmin/table](https://github.com/pure-admin/pure-admin-table) and `element-plus` [table](https://element-plus.org /zh-CN/component/table.html) example remains the same
+- Add more examples for [@pureadmin/table](https://ouransoft.vn/pure-admin-table) and `element-plus` [table](https://element-plus.org /zh-CN/component/table.html) example remains the same
 - Rich watermark function page (supports customizing various colors, shadows, text, additional attributes, setting undeletable watermarks and setting watermarks for specified elements)
 - Optimize the menu, add `MenuArrowIconNoTransition` global configuration, configure it in `public/platform-config.json`, for the left menu mode, the menu expansion can be set `MenuArrowIconNoTransition: true` to solve
 - Replacement form designer component demo
@@ -723,8 +723,8 @@ Totally `ESM` version
 
 ### 🎫 Feat
 
-- Secondary encapsulation of `Table` of `element-plus` into [@pureadmin/table](https://github.com/pure-admin/pure-admin-table), providing flexible configuration items and integrating into the platform
-- Secondary encapsulation of `Descriptions` of `element-plus` into [@pureadmin/descriptions](https://github.com/pure-admin/pure-admin-descriptions), providing flexible configuration items and integrating into the platform
+- Secondary encapsulation of `Table` of `element-plus` into [@pureadmin/table](https://ouransoft.vn/pure-admin-table), providing flexible configuration items and integrating into the platform
+- Secondary encapsulation of `Descriptions` of `element-plus` into [@pureadmin/descriptions](https://ouransoft.vn/pure-admin-descriptions), providing flexible configuration items and integrating into the platform
 - Centralize most of the tools and hooks of the platform to [@pureadmin/utils](https://pure-admin-utils.netlify.app), and delete the code concentrated in this library to reduce the size of the platform
 - Add [unplugin-vue-define-options](https://www.npmjs.com/package/unplugin-vue-define-options) plugin, the page can directly write `defineOptions({name: custom name})`
 - Add project files, language analysis tool [cloc](https://www.npmjs.com/package/cloc)
@@ -769,7 +769,7 @@ Totally `ESM` version
 - Integrate `Swiper` plugin
 - Routing supports passing `component`, representing the component path
 - Added pre-release packaging mode
-- Add [hooks] to close a tag (https://github.com/pure-admin/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
+- Add [hooks] to close a tag (https://ouransoft.vn/vue-pure-admin/commit/5e8723a031923e79f507e5a17151d3bd88a51523)
 
 ### ✔️ Refactor
 
@@ -781,7 +781,7 @@ Totally `ESM` version
 - Optimized the style of the `split-pane` component for the platform
 - Optimize internationalization, no longer pass the `i18n` field in the route, the platform automatically reads the files in the `locales` folder of the root directory for internationalization matching
 - Optimized icon selector
-- Optimize `layout` to display user information [commit](https://github.com/pure-admin/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
+- Optimize `layout` to display user information [commit](https://ouransoft.vn/vue-pure-admin/commit/56f9dc85e7fbe0637605c43577c794de9f8968aa)
 
 ### 🐞 Bug fixes
 

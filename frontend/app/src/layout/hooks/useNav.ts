@@ -26,6 +26,7 @@ export function useNav() {
   const { isFullscreen, toggle } = useFullscreen();
   const { wholeMenus } = storeToRefs(usePermissionStoreHook());
   /** 平台`layout`中所有`el-tooltip`的`effect`配置，默认`light` */
+  // Cấu hình `effect` của tất cả `el-tooltip` trong platform `layout`, mặc định là `light`
   const tooltipEffect = getConfig()?.TooltipEffect ?? "light";
 
   const getDivStyle = computed((): CSSProperties => {
@@ -39,13 +40,15 @@ export function useNav() {
   });
 
   /** 头像（如果头像为空则使用 src/assets/user.jpg ） */
+  /** Hình đại diện (nếu hình đại diện trống, hãy sử dụng src/assets/user.jpg) */
   const userAvatar = computed(() => {
     return isAllEmpty(useUserStoreHook()?.avatar)
       ? Avatar
       : useUserStoreHook()?.avatar;
   });
 
-  /** 昵称（如果昵称为空则显示用户名） */
+  /** Tên（如果姓名为空则显示用户名） */
+  /** Tên (nếu Tên trống, tên người dùng được hiển thị) */
   const username = computed(() => {
     return isAllEmpty(useUserStoreHook()?.nickname)
       ? useUserStoreHook()?.username
@@ -53,6 +56,7 @@ export function useNav() {
   });
 
   /** 设置国际化选中后的样式 */
+  // Đặt kiểu sau khi lựa chọn quốc tế hóa
   const getDropdownItemStyle = computed(() => {
     return (locale, t) => {
       return {
@@ -88,8 +92,9 @@ export function useNav() {
   const title = computed(() => {
     return $config.Title;
   });
-
+  const epThemeStore = useEpThemeStoreHook();
   /** 动态title */
+  /** Tiêu đề động */
   function changeTitle(meta: routeMetaType) {
     const Title = getConfig().Title;
     if (Title) document.title = `${transformI18n(meta.title)} | ${Title}`;
@@ -97,6 +102,7 @@ export function useNav() {
   }
 
   /** 退出登录 */
+  /** Đăng xuất */
   function logout() {
     useUserStoreHook().logOut();
   }
@@ -138,13 +144,18 @@ export function useNav() {
   }
 
   /** 判断路径是否参与菜单 */
+  /** Xác định xem đường dẫn có tham gia vào menu không */
   function isRemaining(path: string) {
     return remainingPaths.includes(path);
   }
 
   /** 获取`logo` */
+  /** Lấy `logo` theo theme*/
   function getLogo() {
-    return new URL("/logo.svg", import.meta.url).href;
+    const isDark = epThemeStore.epTheme === "light";
+    return isDark
+      ? new URL("/logo.svg", import.meta.url).href
+      : new URL("/white.svg", import.meta.url).href;
   }
 
   return {

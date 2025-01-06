@@ -59,7 +59,7 @@ function onReset() {
         <p class="font-medium">自定义防抖、截流、文本复制、长按指令</p>
         <el-link
           class="mt-2"
-          href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/able/directives.vue"
+          href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/able/directives.vue"
           target="_blank"
         >
           代码位置 src/views/able/directives.vue

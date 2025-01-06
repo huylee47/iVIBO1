@@ -51,7 +51,7 @@ function onCloseTags() {
       <div class="font-medium">标签页复用，超出限制自动关闭</div>
       <el-link
         class="mt-2"
-        href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/tabs"
+        href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/tabs"
         target="_blank"
       >
         代码位置 src/views/tabs

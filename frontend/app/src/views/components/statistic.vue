@@ -41,7 +41,7 @@ function reset() {
         </div>
         <el-link
           class="mt-2"
-          href="https://github.com/pure-admin/vue-pure-admin/blob/main/src/views/components/statistic.vue"
+          href="https://ouransoft.vn/vue-pure-admin/blob/main/src/views/components/statistic.vue"
           target="_blank"
         >
           代码位置 src/views/components/statistic.vue
@@ -50,7 +50,7 @@ function reset() {
 
       <el-row :gutter="24">
         <re-col :value="6" :xs="24" :sm="24">
-          <el-statistic title="需求人数" :value="outputValue" />
+          <el-statistic title="Nhân sự" :value="outputValue" />
         </re-col>
 
         <re-col :value="6" :xs="24" :sm="24">
