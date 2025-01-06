@@ -48,6 +48,9 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
     "@goongmaps/goong-js": "^1.0.9",
     "@howdyjs/mouse-menu": "^2.1.6",
     "@infectoone/vue-ganttastic": "^2.3.2",
@@ -87,6 +90,8 @@
     "plus-pro-components": "^0.1.17",
     "qrcode": "^1.5.4",
     "qs": "^6.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "responsive-storage": "^2.2.0",
     "sortablejs": "^1.15.3",
     "swiper": "^11.1.14",

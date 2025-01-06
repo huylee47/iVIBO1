@@ -11,6 +11,15 @@ importers:
       '@amap/amap-jsapi-loader':
         specifier: ^1.0.1
         version: 1.0.1
+      '@fullcalendar/core':
+        specifier: ^6.1.15
+        version: 6.1.15
+      '@fullcalendar/daygrid':
+        specifier: ^6.1.15
+        version: 6.1.15(@fullcalendar/core@6.1.15)
+      '@fullcalendar/interaction':
+        specifier: ^6.1.15
+        version: 6.1.15(@fullcalendar/core@6.1.15)
       '@goongmaps/goong-js':
         specifier: ^1.0.9
         version: 1.0.9(mapbox-gl@1.13.3)
@@ -128,6 +137,12 @@ importers:
       qs:
         specifier: ^6.13.0
         version: 6.13.0
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
       responsive-storage:
         specifier: ^2.2.0
         version: 2.2.0
@@ -1032,6 +1047,19 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@fullcalendar/core@6.1.15':
+    resolution: {integrity: sha512-BuX7o6ALpLb84cMw1FCB9/cSgF4JbVO894cjJZ6kP74jzbUZNjtwffwRdA+Id8rrLjT30d/7TrkW90k4zbXB5Q==}
+
+  '@fullcalendar/daygrid@6.1.15':
+    resolution: {integrity: sha512-j8tL0HhfiVsdtOCLfzK2J0RtSkiad3BYYemwQKq512cx6btz6ZZ2RNc/hVnIxluuWFyvx5sXZwoeTJsFSFTEFA==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.15
+
+  '@fullcalendar/interaction@6.1.15':
+    resolution: {integrity: sha512-DOTSkofizM7QItjgu7W68TvKKvN9PSEEvDJceyMbQDvlXHa7pm/WAVtAc6xSDZ9xmB1QramYoWGLHkCYbTW1rQ==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.15
 
   '@goongmaps/goong-js@1.0.9':
     resolution: {integrity: sha512-FcAvJU/H8TvYMClgerPvuMDavu11YH2ojs5BV9/tFmLheT28nK0X4EptEoPu8oiBsP4yjvTo0RJInHWntX/HAg==}
@@ -4726,6 +4754,9 @@ packages:
   potpack@1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}
 
+  preact@10.12.1:
+    resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==}
+
   preact@10.24.2:
     resolution: {integrity: sha512-1cSoF0aCC8uaARATfrlz4VCBqE8LwZwRfLgkxJOQwAlQt6ayTmi0D9OF7nXid1POI5SZidFuG9CnlXbDfLqY/Q==}
 
@@ -4803,8 +4834,17 @@ packages:
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
 
+  react-dom@19.0.0:
+    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+    peerDependencies:
+      react: ^19.0.0
+
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+
+  react@19.0.0:
+    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+    engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
@@ -4940,6 +4980,9 @@ packages:
   saxes@5.0.1:
     resolution: {integrity: sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==}
     engines: {node: '>=10'}
+
+  scheduler@0.25.0:
+    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
 
   scroll-into-view-if-needed@2.2.31:
     resolution: {integrity: sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==}
@@ -6542,6 +6585,18 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@fullcalendar/core@6.1.15':
+    dependencies:
+      preact: 10.12.1
+
+  '@fullcalendar/daygrid@6.1.15(@fullcalendar/core@6.1.15)':
+    dependencies:
+      '@fullcalendar/core': 6.1.15
+
+  '@fullcalendar/interaction@6.1.15(@fullcalendar/core@6.1.15)':
+    dependencies:
+      '@fullcalendar/core': 6.1.15
 
   '@goongmaps/goong-js@1.0.9(mapbox-gl@1.13.3)':
     dependencies:
@@ -10895,6 +10950,8 @@ snapshots:
 
   potpack@1.0.2: {}
 
+  preact@10.12.1: {}
+
   preact@10.24.2: {}
 
   prelude-ls@1.2.1: {}
@@ -10959,7 +11016,14 @@ snapshots:
       destr: 2.0.3
     optional: true
 
+  react-dom@19.0.0(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      scheduler: 0.25.0
+
   react-is@17.0.2: {}
+
+  react@19.0.0: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -11106,6 +11170,8 @@ snapshots:
   saxes@5.0.1:
     dependencies:
       xmlchars: 2.2.0
+
+  scheduler@0.25.0: {}
 
   scroll-into-view-if-needed@2.2.31:
     dependencies:
