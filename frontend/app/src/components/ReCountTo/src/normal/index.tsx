@@ -8,6 +8,7 @@ import {
 } from "vue";
 import { countToProps } from "./props";
 import { isNumber } from "@pureadmin/utils";
+import * as React from "react";
 
 export default defineComponent({
   name: "ReNormalCountTo",
