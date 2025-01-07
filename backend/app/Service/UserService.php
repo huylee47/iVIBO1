@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Http\Requests\UserRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserService{
     public function index(){
@@ -56,6 +57,12 @@ class UserService{
                 'status_name' => $user->status ? $user->status->status_name : null,
                 'limit_remaining' => $user->limit_remaining,
             ]);
+    }
+    public function showUID(){
+        $user = Auth::user();
+        $id = $user->id;
+        $UID = $this->show($id);
+        return response()->json($UID,200,[],JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
     public function update(UserRequest $request , $id){
         $user = User::find($id);
