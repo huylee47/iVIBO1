@@ -24,6 +24,7 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::middleware(['auth:sanctum','abilities:admin'])->group(function(){
     Route::prefix('user')->group(function (){
         Route::get('/', [UserController::class,'index']);
+        Route::get('/show',[UserController::class,'show']);
         Route::post('/store',[UserController::class,'store']);
         Route::delete('/delete/{id}',[UserController::class,'destroy']);
     });
@@ -49,7 +50,7 @@ Route::middleware(['auth:sanctum'])->group(function (){
         Route::post('/',[TimeKeepingController::class,'checkIn']);
     });
     Route::prefix('user')->group(function (){
-        Route::get('/show/{id}',[UserController::class,'show']);
+        Route::get('/',[UserController::class,'showUID']);
         Route::put('/update/{id}',[UserController::class,'update']);
     });
 });
