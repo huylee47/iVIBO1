@@ -18,30 +18,45 @@ const fetchTasks = async () => {
   }
 
   try {
-    const response = await axios.get("http://127.0.0.1:8000/api/task/list", {
+    // Lấy thông tin người dùng và role
+    const userResponse = await axios.get("http://127.0.0.1:8000/api/user/", {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json"
       }
     });
 
-    console.log("Dữ liệu trả về từ API:", response.data);
+    const role = userResponse.data.original.role_name; // Lấy role của người dùng
+    console.log("Role của người dùng:", role);
 
-    // Chuyển đổi dữ liệu từ API thành dạng sự kiện phù hợp với FullCalendar
-    events.value = response.data.map((task: any) => ({
+    // Kiểm tra quyền và chọn API phù hợp
+    const apiUrl =
+      role === "admin"
+        ? "http://127.0.0.1:8000/api/task/list" // API dành cho admin
+        : "http://127.0.0.1:8000/api/task/"; // API dành cho người dùng thường
+
+    // Gọi API nhiệm vụ
+    const taskResponse = await axios.get(apiUrl, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/json"
+      }
+    });
+
+    // Gắn dữ liệu nhiệm vụ vào events
+    events.value = taskResponse.data.map((task: any) => ({
       title: task.task,
-      start: task.start_time, // Đảm bảo start_time có định dạng đúng
-      end: task.end_time, // Đảm bảo end_time có định dạng đúng
+      start: task.start_time,
+      end: task.end_time,
       description: task.description,
-      id: task.id // Giả sử task có id để cập nhật trên server
+      id: task.id
     }));
 
-    // Cập nhật lại lịch sau khi lấy dữ liệu từ API
     if (calendarRef.value) {
       const calendar = new Calendar(calendarRef.value, {
         plugins: [dayGridPlugin, interactionPlugin],
         initialView: "dayGridMonth",
-        editable: true, // Cho phép thay đổi kích thước và di chuyển sự kiện
+        editable: true,
         selectable: true,
         events: events.value, // Dữ liệu sự kiện
         eventClick: function (info) {
@@ -112,7 +127,6 @@ const fetchTasks = async () => {
   }
 };
 
-// Khi component được mount, gọi hàm fetchTasks để lấy dữ liệu và render lịch
 onMounted(() => {
   fetchTasks();
 });
@@ -120,7 +134,6 @@ onMounted(() => {
 
 <template>
   <div>
-    <!-- Hiển thị lịch FullCalendar -->
     <div ref="calendarRef" />
   </div>
 </template>
