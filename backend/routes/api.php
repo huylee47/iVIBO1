@@ -1,7 +1,6 @@
 <?php
-
-use App\Http\Controllers\client\TimeKeepingController;;
-use App\Http\Controllers\admin\ProjectController;
+use App\Http\Controllers\client\TimeKeepingController;
+use App\Http\Controllers\client\ProjectController;
 use App\Http\Controllers\admin\TaskController;
 use App\Http\Controllers\admin\UserController;
 use App\Http\Controllers\admin\CheckLogController;
@@ -30,13 +29,6 @@ Route::middleware(['auth:sanctum','abilities:admin'])->group(function(){
     Route::prefix('check-log')->group(function (){
         Route::get('/list',[CheckLogController::class,'index']);
     });
-    // Route::prefix('/project')->group(function (){
-    //     Route::get('/',[ProjectController::class,'index']);
-    //     Route::post('/store',[ProjectController::class,'store']);
-    //     Route::get('/show/{id}',[ProjectController::class,'show']);
-    //     Route::put('/update/{id}',[ProjectController::class,'update']);
-    //     Route::delete('/delete/{id}',[ProjectController::class,'destroy']);
-    // });
     Route::prefix('task')->group(function (){
         Route::get('/list',[TaskController::class,'index']);
     });
@@ -52,4 +44,12 @@ Route::middleware(['auth:sanctum'])->group(function (){
         Route::get('/show/{id}',[UserController::class,'show']);
         Route::put('/update/{id}',[UserController::class,'update']);
     });
+});
+
+Route::prefix('/project')->name("project.")->group(function (){
+    Route::get('/',[ProjectController::class,'index'])->name("index");
+//         Route::post('/store',[ProjectController::class,'store']);
+//         Route::get('/show/{id}',[ProjectController::class,'show']);
+//         Route::put('/update/{id}',[ProjectController::class,'update']);
+//         Route::delete('/delete/{id}',[ProjectController::class,'destroy']);
 });

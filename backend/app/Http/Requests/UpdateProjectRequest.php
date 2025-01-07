@@ -22,7 +22,9 @@ class ProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'project_name' => 'required|string|max:255',
+            "id"=>["required", "digits:20"],
+            'project_name' => ["required","string","max:255"],
+			'status_id' =>["required", "digits:20"],
         ];
     }
 }
